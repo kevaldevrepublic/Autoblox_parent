@@ -30,10 +30,11 @@ public class login extends keywords
 	  
 	  public static void navigateLoginacceptance()  throws Exception 
 	  {
-	    openURL("https://acceptatie.autoblox.eu");
+	    openURL("https://acceptatie.autoblox.eu/Login.aspx");
+	    
         String link = currentURL();
         System.out.println("Open Link -> " + link);
-    
+        Thread.sleep(5000);
 	  }
         
 	  

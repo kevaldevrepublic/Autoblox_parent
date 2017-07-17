@@ -118,18 +118,18 @@ public class keywords {
 	}
 	public static  void excelpath()throws Exception
 	 {
-		excel_datadriven.setExcelFile("D:\\Keval\\Data\\Selenium\\Scripts\\AutoBlox\\src\\excel_datadriven\\datadrivenExcel1.xlsx", "Sheet1");
+		excel_datadriven.setExcelFile("D:\\Keval\\Data\\Selenium\\Scripts\\live\\Autoblox_parent\\src\\excel_datadriven\\datadrivenExcel1.xlsx", "Sheet1");
 		
 	 }
 	public static  void excelpath_sheet2()throws Exception
 	 {
-		excel_datadriven.setExcelFile("D:\\Keval\\Data\\Selenium\\Scripts\\AutoBlox\\src\\excel_datadriven\\datadrivenExcel.xlsx", "Sheet2");
+		excel_datadriven.setExcelFile("D:\\Keval\\Data\\Selenium\\Scripts\\live\\Autoblox_parent\\src\\excel_datadriven\\datadrivenExcel.xlsx", "Sheet2");
 		
 	 }
 	
 	public static  java.lang.String dev_20_excelpath_sheet1()throws Exception
 	 {
-		excel_datadriven.setExcelFile("D:\\Keval\\Data\\Selenium\\Scripts\\AutoBlox\\src\\excel_datadriven\\datadrivenExcel.xlsx", "Sheet2");
+		excel_datadriven.setExcelFile("D:\\Keval\\Data\\Selenium\\Scripts\\live\\Autoblox_parent\\src\\excel_datadriven\\datadrivenExcel.xlsx", "Sheet2");
 		return null;
 		
 	 }
