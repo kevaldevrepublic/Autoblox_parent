@@ -21,159 +21,184 @@ import com.gargoylesoftware.htmlunit.Version;
 
 public class Dev59_Cardocs_point_6_FF extends keywords 
 {
-	  
-	  private static String baseUrl;
-	  private boolean acceptNextAlert = true;
-	  private static StringBuffer verificationErrors = new StringBuffer();
-	  final static Logger logger = Logger.getLogger(Dev59_Cardocs_point_6_FF.class);
-	  
-	  
 
-	  @BeforeClass
-	  public static void setUp() throws Exception 
-	  {
-		 // System.setProperty("webdriver.chrome.driver", "D:\\Devrepublic\\Keval\\Data\\Selenium\\latest_chromedriver_win32\\chromedriver.exe");
-		  // WebDriver driver=new ChromeDriver();
-		  driver = new FirefoxDriver();
+	private static String baseUrl;
+	private boolean acceptNextAlert = true;
+	private static StringBuffer verificationErrors = new StringBuffer();
+	final static Logger logger = Logger.getLogger(Dev59_Cardocs_point_6_FF.class);
+
+
+
+	@BeforeClass
+	public static void setUp() throws Exception 
+	{
+		// System.setProperty("webdriver.chrome.driver", "D:\\Devrepublic\\Keval\\Data\\Selenium\\latest_chromedriver_win32\\chromedriver.exe");
+		// WebDriver driver=new ChromeDriver();
+		driver = new FirefoxDriver();
 		driver.manage().deleteAllCookies();  
-	    driver.manage().window().maximize();
-	    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-	    Capabilities cap = ((RemoteWebDriver) driver).getCapabilities();
-	    
-	    String os = cap.getPlatform().toString();
-	    System.out.println(os);
-	   	   
-	    String browserName = cap.getBrowserName().toLowerCase();
-	    System.out.println(browserName);
-	    
-	    String version = cap.getVersion().toString();
-	    System.out.println(version);
-	    keywords.setFirefoxDriver(driver);
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		Capabilities cap = ((RemoteWebDriver) driver).getCapabilities();
 
-	  } 
+		String os = cap.getPlatform().toString();
+		System.out.println(os);
 
-	  @Test
+		String browserName = cap.getBrowserName().toLowerCase();
+		System.out.println(browserName);
 
-	  public void login_test_suit() throws Exception {
-		  
-		  login.navigateLoginacceptance();
-		  logger.info("Enter in website");
-		  String loginurl = driver.getCurrentUrl();
-		  System.out.println(loginurl + "open website");
-		  
-		  login.correctLoginacceptance();
-		  logger.info("login sucessfull");
-		  System.out.println("login sucessfull");
-		  
-		  String homeurl = driver.getCurrentUrl();
-		  System.out.println(homeurl);
-		  
-		  String loginid= getText ("id","ctl00_lblUserName");
-		  
-		  System.out.println(loginid);
-		 
-		  Thread.sleep(10000);
-		  
-		  openURL("https://acceptatie.autoblox.eu/CarDocs.aspx");
-		  String link = currentURL();
-	      System.out.println("Open Link -> " + link);
-	      Thread.sleep(10000);
-		  
-	      dropdownByValue("id","ctl00_cphContent_ddIsClosedSale","0");
-		  System.out.println("select Admin");
-		  Thread.sleep(10000);
-	           
-	      dropdownByValue("id","ctl00_cphContent_ddStatus","11");
-		  System.out.println("select status value");
-		  Thread.sleep(10000);
-		  
-		  dropdownByValue("id","ctl00_cphContent_ddIsSold","1");
-		  System.out.println("select content value");
-		  Thread.sleep(10000);
-		  
-		  clickElement("xpath", ".//*[@id='ctl00_cphContent_gvList_ctl02_lnkHdrSaleDate']"); 
-		  System.out.println("sort date");
-		  String dateid1= getText ("xpath",".//*[@id='ctl00_cphContent_gvList']/tbody/tr[3]/td[11]");
-		  System.out.println(dateid1);
-		  
-		 		  
+		String version = cap.getVersion().toString();
+		System.out.println(version);
+		keywords.setFirefoxDriver(driver);
 
-		  int x = 3;
+	} 
 
-	      while( x > 0 ) 
-				      {
-				         System.out.print("Enter the loop \n" );
-				         
-				         String dateid= getText ("xpath",".//*[@id='ctl00_cphContent_gvList']/tbody/tr[3]/td[11]");
-						  System.out.println(dateid);
-						  Thread.sleep(10000);
-			  
-							  if(!dateid.contains("2017") )
-							  {
-							  //start function process
-								  System.out.println("click on icon before");
-								  //clickElement("xpath","//img[contains(@src,'images/icon.CarDocs.CodeO.gif')]");  
-								  
-								  clickElement("id", "ctl00_cphContent_gvList_ctl03_imCodeO"); 
-								  System.out.println("click on icon");
-								  Thread.sleep(4000);
-								 
-								  driver.switchTo().frame("ctl00_cphContent_mpCarDocs_mp_Frame");
-								  System.out.println("move to alert");	
-							      insertElement("id","ucCarDocs_tbDocNo","0000000000");
-							      System.out.println("first field inserted");	
-							      Thread.sleep(4000);
-							      
-							      insertElement("id","ucCarDocs_tbDocCode","000000000");
-							      System.out.println("second field inserted");	
-							      Thread.sleep(4000);
-							      
-							      clickElement("id", "ucCarDocs_btnOK");
-							      System.out.println("close alert");	
-							      Thread.sleep(4000);
-							      driver.switchTo().defaultContent();
-							      //refresh();
-							      Thread.sleep(4000);
-							      x--;
-							      System.out.println(x);	
-							      
-							  }
-							  else 
-							  {
-								  System.out.println("its break");
-								  break;
-						    	 
-								 
-							  }
-	 
-				      }
-		  
-	      if(x==0)
-	      {
-	    	  System.out.println("function successfully completed ");
-	      }
-	  }
-	 
-	      //function completed
-	      
-	
-	  @AfterClass
-	  public  static void tearDown() throws Exception {
-	    
-		 Thread.sleep(15000);
-		 login.logout();
-		 System.out.println("logout successfull");
-		 logger.info("logout successfully");
-		 Thread.sleep(10000);
-		 driver.quit();
-	    String verificationErrorString = verificationErrors.toString();
-	    if (!"".equals(verificationErrorString)) {
-	      fail(verificationErrorString);
-	    }
-	  }
-	
-	
- }
+	@Test
+
+	public void login_test_suit() throws Exception {
+		try
+		{
+
+			login.navigateLoginacceptance();
+			logger.info("Enter in website");
+			String loginurl = driver.getCurrentUrl();
+			System.out.println(loginurl + "open website");
+
+			login.correctLoginacceptance();
+			logger.info("login sucessfull");
+			System.out.println("login sucessfull");
+
+			String homeurl = driver.getCurrentUrl();
+			System.out.println(homeurl);
+
+			String loginid= getText ("id","ctl00_lblUserName");
+
+			System.out.println(loginid);
+
+			Thread.sleep(10000);
+
+			openURL("https://acceptatie.autoblox.eu/CarDocs.aspx");
+			String link = currentURL();
+			System.out.println("Open Link -> " + link);
+			Thread.sleep(10000);
+
+			dropdownByValue("id","ctl00_cphContent_ddIsClosedSale","0");
+			System.out.println("select Admin");
+			Thread.sleep(10000);
+
+			dropdownByValue("id","ctl00_cphContent_ddStatus","11");
+			System.out.println("select status value");
+			Thread.sleep(10000);
+
+			dropdownByValue("id","ctl00_cphContent_ddIsSold","1");
+			System.out.println("select content value");
+			Thread.sleep(10000);
+
+			clickElement("xpath", ".//*[@id='ctl00_cphContent_gvList_ctl02_lnkHdrSaleDate']"); 
+			System.out.println("sort date");
+			String dateid1= getText ("xpath",".//*[@id='ctl00_cphContent_gvList']/tbody/tr[3]/td[11]");
+			System.out.println(dateid1);
+
+
+
+			int x = 3;
+
+			while( x > 0 ) 
+			{
+				System.out.print("Enter the loop \n" );
+
+				String dateid= getText ("xpath",".//*[@id='ctl00_cphContent_gvList']/tbody/tr[3]/td[11]");
+				System.out.println(dateid);
+				Thread.sleep(10000);
+
+				if(!dateid.contains("2017") )
+				{
+					//start function process
+					System.out.println("click on icon before");
+					//clickElement("xpath","//img[contains(@src,'images/icon.CarDocs.CodeO.gif')]");  
+
+					clickElement("id", "ctl00_cphContent_gvList_ctl03_imCodeO"); 
+					System.out.println("click on icon");
+					Thread.sleep(4000);
+
+					driver.switchTo().frame("ctl00_cphContent_mpCarDocs_mp_Frame");
+					System.out.println("move to alert");	
+					insertElement("id","ucCarDocs_tbDocNo","0000000000");
+					System.out.println("first field inserted");	
+					Thread.sleep(4000);
+
+					insertElement("id","ucCarDocs_tbDocCode","000000000");
+					System.out.println("second field inserted");	
+					Thread.sleep(4000);
+
+					clickElement("id", "ucCarDocs_btnOK");
+					System.out.println("close alert");	
+					Thread.sleep(4000);
+					driver.switchTo().defaultContent();
+					//refresh();
+					Thread.sleep(4000);
+					x--;
+					System.out.println(x);	
+
+				}
+				else 
+				{
+					System.out.println("its break");
+					break;
+
+
+				}
+
+			}
+		}
+		catch(Exception e){
+
+			System.out.println("login_test_suit Exception");
+			System.out.println("quit browser");
+			driver.quit();
+			Thread.sleep(5000);
+			System.out.println("Exception quit done");
+			Thread.sleep(5000);
+			System.out.println("Exception open new");
+			Thread.sleep(5000);
+			setUp();
+			Dev59_Cardocs_point_6_FF obj = new Dev59_Cardocs_point_6_FF();
+			obj.login_test_suit();
+
+		}
+
+
+
+	}		  
+
+
+	//function completed
+
+
+	@AfterClass
+	public  static void tearDown() throws Exception {
+
+		Thread.sleep(15000);
+		//login.logout();
+		//System.out.println("logout successfull");
+		// logger.info("logout successfully");
+		// Thread.sleep(10000);
+
+		driver.quit();
+		Thread.sleep(10000);
+		System.out.println("quit done");
+		setUp();
+		Dev59_Cardocs_point_6_FF obj = new Dev59_Cardocs_point_6_FF();
+		obj.login_test_suit();
+
+		System.out.println("Strat again");
+		String verificationErrorString = verificationErrors.toString();
+		if (!"".equals(verificationErrorString)) {
+			fail(verificationErrorString);
+		}
+	}
+
+
+}
 
 
 
