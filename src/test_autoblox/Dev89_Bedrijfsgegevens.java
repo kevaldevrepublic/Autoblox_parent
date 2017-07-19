@@ -79,10 +79,10 @@ public class Dev89_Bedrijfsgegevens extends keywords {
 			clickElement("id","ctl00_mmMyData_lnk");
 			System.out.println("clicked in menu");
 			Thread.sleep(5000);
-			clickElement("linkText","Bedrijfsgegevens");
+			clickElement("id","Bedrijfsgegevens");
 			System.out.println("clicked in company");
 			Thread.sleep(5000);
-			clickElement("linkText","Workflow (2)");
+			clickElement("id","ctl00_cphContent_tbsCompany_tbbProtocols_bTab");
 			System.out.println("clicked in workflow");
 			Thread.sleep(5000);
 			clickElement("xpath",".//*[@id='ctl00_cphContent_ucProtocols_gvList']/tbody/tr[2]/td[3]");
