@@ -20,7 +20,7 @@ public class Dev89_Bedrijfsgegevens extends keywords {
 	private static String baseUrl;
 	private boolean acceptNextAlert = true;
 	private static StringBuffer verificationErrors = new StringBuffer();
-	final static Logger logger = Logger.getLogger(Dev59_Cardocs_point_8_FF.class);
+	final static Logger logger = Logger.getLogger(Dev89_Bedrijfsgegevens.class);
 
 
 
@@ -59,12 +59,12 @@ public class Dev89_Bedrijfsgegevens extends keywords {
 	{
 		try{  
 
-			login.navigateLoginacceptance();
+			login.navigateLogin();
 			logger.info("Enter in website");
 			String loginurl = driver.getCurrentUrl();
 			System.out.println(loginurl + "\n open website");
 
-			login.correctLoginacceptance();
+			login.correctLogin();
 			logger.info("login sucessfull");
 			System.out.println("login sucessfull");
 
@@ -76,27 +76,47 @@ public class Dev89_Bedrijfsgegevens extends keywords {
 			System.out.println(loginid);
 			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 			Thread.sleep(5000);
+			
 			clickElement("id","ctl00_mmMyData_lnk");
 			System.out.println("clicked in menu");
-			Thread.sleep(5000);
-			clickElement("id","Bedrijfsgegevens");
+			Thread.sleep(10000);
+			
+			clickElement("linkText","Bedrijfsgegevens");
+			//clickElement("xpath","//a[contains(.,'Bedrijfsgegevens')]");
 			System.out.println("clicked in company");
-			Thread.sleep(5000);
+			Thread.sleep(10000);
+			
 			clickElement("id","ctl00_cphContent_tbsCompany_tbbProtocols_bTab");
 			System.out.println("clicked in workflow");
-			Thread.sleep(5000);
-			clickElement("xpath",".//*[@id='ctl00_cphContent_ucProtocols_gvList']/tbody/tr[2]/td[3]");
-			System.out.println("clicked in first element");
-			Thread.sleep(5000);
+			Thread.sleep(10000);
+			
+			clickElement("id","ctl00_cphContent_ucProtocols_gvList_ctl03_btnProtocolName");
+			System.out.println("clicked in second element");
+			Thread.sleep(10000);
+			
+			driver.switchTo().frame("ctl00_cphContent_ucProtocols_mfProtocolEdit_mfFrame");
+			System.out.println("move to alert");	
+			Thread.sleep(8000);
+			
+			getText("xpath",".//*[@id='mp_divPage']/table/tbody/tr/td[2]/table/tbody/tr/td[1]");
+			
+			Thread.sleep(8000);
+			clickElement("id","lnkModalCancel");
+			
+			driver.switchTo().defaultContent();
+			Thread.sleep(8000);
+			
+			getText("id","ctl00_cphContent_ucProtocols_dvProtocolHeader");
+			
 		}
 
 		catch(Exception e){
 
-			Thread.sleep(15000);
+			//Thread.sleep(15000);
 			System.out.println("Unexpected Error");
 			logger.info("Unexpected Error");
-			driver.quit();
-			System.out.println("quit done");
+			//driver.quit();
+			//System.out.println("quit done");
 
 		}
 
