@@ -98,16 +98,16 @@ public class Dev89_Bedrijfsgegevens extends keywords {
 			System.out.println("move to alert");	
 			Thread.sleep(8000);
 			
-			getText("xpath",".//*[@id='mp_divPage']/table/tbody/tr/td[2]/table/tbody/tr/td[1]");
-			
+			String a = getText("xpath",".//*[@id='mp_divPage']/table/tbody/tr/td[2]/table/tbody/tr/td[1]");
+			System.out.println(a);
 			Thread.sleep(8000);
 			clickElement("id","lnkModalCancel");
 			
 			driver.switchTo().defaultContent();
 			Thread.sleep(8000);
 			
-			getText("id","ctl00_cphContent_ucProtocols_dvProtocolHeader");
-			
+			String b = getText("id","ctl00_cphContent_ucProtocols_dvProtocolHeader");
+			System.out.println(b);
 		}
 
 		catch(Exception e){
