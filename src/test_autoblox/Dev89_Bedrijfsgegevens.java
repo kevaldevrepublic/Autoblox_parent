@@ -77,10 +77,17 @@ public class Dev89_Bedrijfsgegevens extends keywords {
 			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 			Thread.sleep(5000);
 			clickElement("id","ctl00_mmMyData_lnk");
+			System.out.println("clicked in menu");
 			Thread.sleep(5000);
 			clickElement("linkText","Bedrijfsgegevens");
+			System.out.println("clicked in company");
 			Thread.sleep(5000);
-
+			clickElement("linkText","Workflow");
+			System.out.println("clicked in workflow");
+			Thread.sleep(5000);
+			clickElement("xpath",".//*[@id='ctl00_cphContent_ucProtocols_gvList']/tbody/tr[2]/td[3]");
+			System.out.println("clicked in first element");
+			Thread.sleep(5000);
 		}
 
 		catch(Exception e){
