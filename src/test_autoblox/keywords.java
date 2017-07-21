@@ -20,10 +20,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 
 public class keywords {
-	
+
 	private static final String String = null;
 	public static  WebDriver driver;
-	
+
 	public static By Byelement (String Type, String Path)
 	{
 		if (Type.equals("id"))
@@ -42,7 +42,7 @@ public class keywords {
 		{
 			return By.name(Path);
 		}
-		
+
 		else if (Type.equals("xpath"))
 		{
 			return By.xpath(Path);
@@ -55,7 +55,7 @@ public class keywords {
 		{
 			return By.cssSelector(Path);
 		}
-		
+
 		else if (Type.equals("linkText"))
 		{
 			return By.linkText(Path);
@@ -64,7 +64,7 @@ public class keywords {
 		{
 			return By.linkText(Path);
 		}*/
-		
+
 		else
 		{
 			return By.id(Path);
@@ -78,27 +78,30 @@ public class keywords {
 	{
 		return driver.findElement(Byelement(Type, Path)); 	
 	}
-	
+
 	public static java.lang.String getmessage(String Type,String Path)
 	{
 		return driver.findElement(Byelement(Type, Path)).getText();
-		
+
 	}
-	
-		
+
+
 	public static void checkbox_selection(String Type,String Path)throws Exception
 	{
-		
-		if(driver.findElement(Byelement(Type, Path)).isSelected()){
+
+		if(driver.findElement(Byelement(Type, Path)).isSelected())
+		{
 			System.out.println("checkbox is not selected");
 			driver.findElement(Byelement(Type, Path)).click();
-		}else if(driver.findElement(Byelement(Type, Path)).isSelected()){
-			System.out.println("checkbox is selected");
-			
-			
-		}else{
-			return;
+			System.out.println("Now checkbox is selected");
 		}
+		else if(driver.findElement(Byelement(Type, Path)).isSelected())
+		{
+			System.out.println("checkbox is selected");
+
+
+		}
+		
 	}
 	public static void clearElement(String Type,String Path)
 	{
@@ -117,68 +120,68 @@ public class keywords {
 		driver.findElement(Byelement(Type, Path)).click(); 
 	}
 	public static  void excelpath()throws Exception
-	 {
+	{
 		excel_datadriven.setExcelFile("D:\\Keval\\Data\\Selenium\\Scripts\\live\\Autoblox_parent\\src\\excel_datadriven\\datadrivenExcel1.xlsx", "Sheet1");
-		
-	 }
+
+	}
 	public static  void excelpath_sheet2()throws Exception
-	 {
+	{
 		excel_datadriven.setExcelFile("D:\\Keval\\Data\\Selenium\\Scripts\\live\\Autoblox_parent\\src\\excel_datadriven\\datadrivenExcel.xlsx", "Sheet2");
-		
-	 }
-	
+
+	}
+
 	public static  java.lang.String dev_20_excelpath_sheet1()throws Exception
-	 {
+	{
 		excel_datadriven.setExcelFile("D:\\Keval\\Data\\Selenium\\Scripts\\live\\Autoblox_parent\\src\\excel_datadriven\\datadrivenExcel.xlsx", "Sheet2");
 		return null;
-		
-	 }
-	
-	
+
+	}
+
+
 	public static void refresh()
-	 {
-	  driver.navigate().refresh();
-	 }
+	{
+		driver.navigate().refresh();
+	}
 	public static void back()
-	 {
-	  driver.navigate().back();
-	 }
+	{
+		driver.navigate().back();
+	}
 	public static void forward()
-	 {
-	  driver.navigate().forward();
-	 }
+	{
+		driver.navigate().forward();
+	}
 	public static Alert alertSwitch()
-	 {
-	  return driver.switchTo().alert();
-	 }
+	{
+		return driver.switchTo().alert();
+	}
 	public static String getAtribute(String Type, String Path, String Value)
-	 {
-	  return driver.findElement(Byelement(Type, Path)).getAttribute(Value);
-	 }
+	{
+		return driver.findElement(Byelement(Type, Path)).getAttribute(Value);
+	}
 	public static String get_all_tabel_data(String Type, String Path, String Value)
-	 {
-	  return driver.findElement(Byelement(Type, Path)).getAttribute(Value);
-	 }
-	
+	{
+		return driver.findElement(Byelement(Type, Path)).getAttribute(Value);
+	}
+
 	public static void submitForm(String Type,String Path)
-	 {
-	  driver.findElement(Byelement(Type, Path)).submit();
-	 }
+	{
+		driver.findElement(Byelement(Type, Path)).submit();
+	}
 	public static  void setFirefoxDriver(WebDriver dri) //for all browsers
-	 {
+	{
 		driver = dri;
-	
-	 }
+
+	}
 	public static  void setchromeDriver(WebDriver dri) //for all browsers
-	 {
+	{
 		driver = dri;
-	
-	 }
-	
+
+	}
+
 	public static void closeWindow()
-  	{
-  		driver.quit();
-  	}
+	{
+		driver.quit();
+	}
 	public static void chromeDriver1() throws Exception
 	{
 		String exePath = "D:\\Keval\\Data\\Selenium\\latest_chromedriver_win32\\chromedriver.exe";
@@ -186,141 +189,159 @@ public class keywords {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		
+
 	}
 
-	
+
 	public static  Object openURL(String url) throws Exception
-	 {
+	{
 		driver.get(url);
-	  return null;
-	
-	 }
+		return null;
+
+	}
 	public static String currentURL()
-	 {
+	{
 		return driver.getCurrentUrl();
-	  
-	 }
+
+	}
 	public static String getText(String Type,String Path)
-	 {
-	  return driver.findElement(Byelement(Type, Path)).getText();
-	 }
+	{
+		return driver.findElement(Byelement(Type, Path)).getText();
+	}
 	public static WebElement webElementClass(String Type, String Path)
-	 {
-	  return driver.findElement(Byelement(Type, Path));
-	 }
+	{
+		return driver.findElement(Byelement(Type, Path));
+	}
 	public static void actionClass(WebElement string2)
-	 {
-	  
-	  Actions action = new Actions(driver);
-	    action.moveToElement(string2).build().perform();
-	 }
+	{
+
+		Actions action = new Actions(driver);
+		action.moveToElement(string2).build().perform();
+	}
+	
 	/*public static void mousemove()
 	 {
-	  
-		WebElement element = driver.findElement(Byelement(String));
-		 
+
+		WebElement element = driver.findElement(Byelement(String, String));
+
         Actions action = new Actions(driver);
- 
+
         action.moveToElement(element).build().perform();
- 
+
         driver.findElement(Byelement(String, String)).click();
-	 }*/
+	 }
+*/
+	 public static  void mouse_move(String Type , String Path, String Type2, String Path2) throws Exception 
+    	{
+    		WebElement element = driver.findElement(Byelement(Type, Path)); 
+    				
+            Actions action = new Actions(driver);
+
+            action.moveToElement(element).perform();
+
+            WebElement subElement = driver.findElement(Byelement(Type2, Path2));
+            		
+            action.moveToElement(subElement);
+
+            action.click();
+
+            action.perform();
+    	}
 	
 	public static  void WebDriverWait(String Type, String Path)
-	 {
-		
+	{
+
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(Byelement(Type, Path)));	  
-	 }
+	}
 	public static  void multiplewindow() throws Exception
 	{
 		{
-		      //driver.get();
-		        String parentWindowHandle = driver.getWindowHandle();
-		        System.out.println("Parent window's handle -> " + parentWindowHandle);
-		        WebElement clickElement = driver.findElement(By.id("button1")); 
+			//driver.get();
+			String parentWindowHandle = driver.getWindowHandle();
+			System.out.println("Parent window's handle -> " + parentWindowHandle);
+			WebElement clickElement = driver.findElement(By.id("button1")); 
 
-		        //for(int i = 0; i < 3; i++)
-		        //{
-		            //clickElement.click();
-		            //Thread.sleep(3000);
-		        //}
+			//for(int i = 0; i < 3; i++)
+			//{
+			//clickElement.click();
+			//Thread.sleep(3000);
+			//}
 
-		        java.util.Set<String> allWindowHandles = driver.getWindowHandles();
-		        String lastWindowHandle = "";
-		      
-		    
-		        for(String handle : allWindowHandles)
-		        {
-		            System.out.println(handle);
-		            if (handle.equals(parentWindowHandle)== false)
-		            {
-		                
-		            System.out.println("Switching to window - > " + handle);
-		            System.out.println("Navigating to google.com");
-		            driver.switchTo().window(handle); //Switch to the desired window first and then execute commands using driver
-		            
-		            Thread.sleep(3000);
-		            clearElement("id","email");
-			        
-			        insertElement("id","email","qadevrepublic1@gmail.com");
-			        
-			        clearElement("id","pass");
-			        
-			        insertElement("id","pass","DevHero@123");
-			        
-			        clickElement("id", "loginbutton");
-		            //driver.get("http://google.com");
-		            lastWindowHandle = handle;
-		            driver.close();
-		            }
-		        }
+			java.util.Set<String> allWindowHandles = driver.getWindowHandles();
+			String lastWindowHandle = "";
 
-		        //Switch to the parent window
-		        //driver.switchTo().window(parentWindowHandle);
-		        //close the parent window
-		        
-		        //at this point there is no focused window, we have to explicitly switch back to some window.
-		        driver.switchTo().window(lastWindowHandle);
-		        //driver.get("http://www.yepme.com/");
-		    // ERROR: Caught exception [ERROR: Unsupported command [waitForPopUp | _blank | 30000]]
-		  }
-	 }
+
+			for(String handle : allWindowHandles)
+			{
+				System.out.println(handle);
+				if (handle.equals(parentWindowHandle)== false)
+				{
+
+					System.out.println("Switching to window - > " + handle);
+					System.out.println("Navigating to google.com");
+					driver.switchTo().window(handle); //Switch to the desired window first and then execute commands using driver
+
+					Thread.sleep(3000);
+					clearElement("id","email");
+
+					insertElement("id","email","qadevrepublic1@gmail.com");
+
+					clearElement("id","pass");
+
+					insertElement("id","pass","DevHero@123");
+
+					clickElement("id", "loginbutton");
+					//driver.get("http://google.com");
+					lastWindowHandle = handle;
+					driver.close();
+				}
+			}
+
+			//Switch to the parent window
+			//driver.switchTo().window(parentWindowHandle);
+			//close the parent window
+
+			//at this point there is no focused window, we have to explicitly switch back to some window.
+			driver.switchTo().window(lastWindowHandle);
+			//driver.get("http://www.yepme.com/");
+			// ERROR: Caught exception [ERROR: Unsupported command [waitForPopUp | _blank | 30000]]
+		}
+	}
 	public static void dropdownByIndex(String Type, String path, int Index) 
-	 {  
-	 Select select = new Select (driver.findElement(Byelement(Type, path)));  
-	 select.selectByIndex(Index);  
-	 select.getOptions();  
-	 //select.selectByValue(arg0);  
-	 //select.deselectByVisibleText(arg0); 
-	 } 
+	{  
+		Select select = new Select (driver.findElement(Byelement(Type, path)));  
+		select.selectByIndex(Index);  
+		select.getOptions();  
+		//select.selectByValue(arg0);  
+		//select.deselectByVisibleText(arg0); 
+	} 
 	public static void dropdownByText(String Type, String path, String Text) 
-	 {  
-	 Select select = new Select (driver.findElement(Byelement(Type, path)));  
-	 //select.selectByIndex(Index);  
-	 select.getOptions();  
-	 //select.selectByValue(arg0);  
-	 select.selectByVisibleText(Text); 
-	 }  
-	
+	{  
+		Select select = new Select (driver.findElement(Byelement(Type, path)));  
+		//select.selectByIndex(Index);  
+		select.getOptions();  
+		//select.selectByValue(arg0);  
+		select.selectByVisibleText(Text); 
+	}  
+
 	public static void window_handle() 
-	 {  
+	{  
 		String handle= driver.getWindowHandle();
 		System.out.println(handle);
-	
-	 }  
-	
+
+	}  
+
 	public static void dropdownByValue(String Type, String path, String Value) 
-	 {  
-	 Select select = new Select (driver.findElement(Byelement(Type, path)));  
-	 //select.selectByIndex(Index);  
-	 select.getOptions();  
-	 select.selectByValue(Value);  
-	 //select.selectByVisibleText(Value); 
-	 }
+	{  
+		Select select = new Select (driver.findElement(Byelement(Type, path)));  
+		//select.selectByIndex(Index);  
+		select.getOptions();  
+		select.selectByValue(Value);  
+		//select.selectByVisibleText(Value); 
+	}
 }
 
-	
-	
+
+
 
