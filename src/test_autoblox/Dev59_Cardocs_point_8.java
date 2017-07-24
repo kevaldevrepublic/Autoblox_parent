@@ -28,23 +28,23 @@ import com.gargoylesoftware.htmlunit.Version;
 
 
 
-public class Dev59_Cardocs_point_7_FF extends keywords 
+public class Dev59_Cardocs_point_8 extends keywords 
 {
 
 	private static String baseUrl;
 	private boolean acceptNextAlert = true;
 	private static StringBuffer verificationErrors = new StringBuffer();
-	final static Logger logger = Logger.getLogger(Dev59_Cardocs_point_7_FF.class);
+	final static Logger logger = Logger.getLogger(Dev59_Cardocs_point_8.class);
 
 
 
 	@BeforeClass
 	public static void setUp() throws Exception 
 	{
-		/*System.setProperty("webdriver.chrome.driver", "D:\\Keval\\Data\\Selenium\\latest_chromedriver_win32\\chromedriver.exe");
-		   WebDriver driver=new ChromeDriver();*/
+		System.setProperty("webdriver.chrome.driver", "D:\\Keval\\Data\\Selenium\\latest_chromedriver_win32\\chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
 
-		driver = new FirefoxDriver();  
+		//driver = new FirefoxDriver();  
 		driver.manage().deleteAllCookies();  
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
@@ -76,11 +76,12 @@ public class Dev59_Cardocs_point_7_FF extends keywords
 
 	public void login_test_suit() throws Exception 
 	{
-		try{    
+		try{  
+
 			login.navigateLoginacceptance();
 			logger.info("Enter in website");
 			String loginurl = driver.getCurrentUrl();
-			System.out.println(loginurl + "open website");
+			System.out.println(loginurl + "\n open website");
 
 			login.correctLoginacceptance();
 			logger.info("login sucessfull");
@@ -130,8 +131,9 @@ public class Dev59_Cardocs_point_7_FF extends keywords
 			System.out.println("sort date");
 			Thread.sleep(20000);
 
-			int count = 365;
-			insertElement("id","ctl00_cphContent_txtPageNumber","365");
+
+			int count = 200;
+			insertElement("id","ctl00_cphContent_txtPageNumber","20");
 			System.out.println("number inputed " + count);	
 			Thread.sleep(10000); 			  
 			clickElement("id", "ctl00_cphContent_btnGoToPageNumber");
@@ -140,9 +142,11 @@ public class Dev59_Cardocs_point_7_FF extends keywords
 
 
 
+
+
+
 			while( count > 1) 
 			{
-
 
 
 				for(int x =3; x< 33 ;x++)
@@ -156,48 +160,70 @@ public class Dev59_Cardocs_point_7_FF extends keywords
 					Thread.sleep(10000);
 					if(!dateid.contains("2017") )
 					{
-						/* String S1= "ctl00_cphContent_gvList_ct";
-								  int S2= 100 + x ;								 
-								  String S3= "_imDocsO";
-								  String S=String.format(S1+S2+S3);*/
-						// System.out.println(S);
+
+						WebElement img1 = driver.findElement(By.xpath(".//*[@id='ctl00_cphContent_gvList']/tbody/tr["+x+"]/td[4]"));
+						String inner_HTML = driver.findElement(By.xpath("//table[@id='ctl00_cphContent_gvList']/tbody/tr["+x+"]/td[4]")).getAttribute("innerHTML");
 
 
-						WebElement img1 = driver.findElement(By.xpath(".//*[@id='ctl00_cphContent_gvList']/tbody/tr["+x+"]/td[3]"));
 
-						//  System.out.println(img1);
-
-
-						String inner_HTML = driver.findElement(By.xpath("//table[@id='ctl00_cphContent_gvList']/tbody/tr["+x+"]/td[3]")).getAttribute("innerHTML");
-						//System.out.println( );
 
 						boolean present;
 
 
-						if( inner_HTML.contains("DocsO.OK.gif") || inner_HTML.contains("DocsO.NOK.gif"))
+						if( inner_HTML.contains("CodeB.OK.gif"))
 						{
+
 							present = false;
-							//System.out.println(S+" " + "Test Green"+" " + x);
+
 
 						}
 						else{
 							present = true;
 							Thread.sleep(4000);
-							//System.out.println(S+" " + "Test RED"+" " + x);
+
 
 							img1.click();
 							Thread.sleep(8000);
-							// clickElement("id", "ucCarPaperConfirm_btnOK");
+
 							System.out.println("popup open"); 
 							Thread.sleep(8000);
-							driver.switchTo().frame("ctl00_cphContent_mpCarPaperConfirm_mp_Frame");
+
+							driver.switchTo().frame("ctl00_cphContent_mpCarDocs_mp_Frame");
 							System.out.println("move to alert");	
-							Thread.sleep(10000);
-							clickElement("id", "ucCarPaperConfirm_btnOK");
-							System.out.println("click on ok");	
 							Thread.sleep(8000);
+
+
+
+							String temp1 = driver.findElement(By.xpath(".//*[@id='ucCarDocs_upControl']/table/tbody/tr[2]/td[2]")).getAttribute("innerHTML");
+
+
+
+							if( temp1.contains("exclamation1.gif"))
+							{
+
+								System.out.println(licence +=" -->  " +"Redmark warning");	
+								String Noplates="";		 
+								System.out.println(Noplates +=""+",");
+								Thread.sleep(10000);
+
+								clickElement("id", "ucCarDocs_btnCancel");
+
+
+							}
+							else{
+								insertElement("id","ucCarDocs_tbDocNo","0000000000");
+								System.out.println("first field inserted");	
+								Thread.sleep(5000);
+								insertElement("id","ucCarDocs_tbDocCode","000000000");
+								System.out.println("second field inserted");	
+								Thread.sleep(5000);				  
+								clickElement("id", "ucCarDocs_btnSND");
+								System.out.println("click on OK en codes vrijgeven");	
+								Thread.sleep(10000);
+								x=x-1;		
+							}
 							driver.switchTo().defaultContent();
-							Thread.sleep(8000);
+							Thread.sleep(20000);
 
 						}
 
@@ -210,18 +236,18 @@ public class Dev59_Cardocs_point_7_FF extends keywords
 
 					}
 
-				}count --;
-				Thread.sleep(4000);
+				}count++;
+				Thread.sleep(10000);
 
-				clickElement("xpath", ".//*[@id='ctl00_cphContent_gvList_ctl01_gvPager_lnkPrev']");
-				System.out.println("click on previoues page "+ count );
-				Thread.sleep(4000);		
+
+				clickElement("xpath", ".//*[@id='ctl00_cphContent_gvList_ctl01_gvPager_lnkNext']");
+				System.out.println("click on NEXT page" + count);
+				Thread.sleep(12000); 	  
 
 
 			}
-
-
-		}		  catch(Exception e){
+		}
+		catch(Exception e){
 
 			System.out.println("login_test_suit Exception");
 			System.out.println("quit browser");
@@ -232,7 +258,7 @@ public class Dev59_Cardocs_point_7_FF extends keywords
 			System.out.println("Exception open new");
 			Thread.sleep(5000);
 			setUp();
-			Dev59_Cardocs_point_7_FF obj = new Dev59_Cardocs_point_7_FF();
+			Dev59_Cardocs_point_8 obj = new Dev59_Cardocs_point_8();
 			obj.login_test_suit();
 
 		}
@@ -240,6 +266,7 @@ public class Dev59_Cardocs_point_7_FF extends keywords
 
 
 	}		  
+
 
 
 
@@ -260,7 +287,7 @@ public class Dev59_Cardocs_point_7_FF extends keywords
 		Thread.sleep(10000);
 		System.out.println("quit done");
 		setUp();
-		Dev59_Cardocs_point_7_FF obj = new Dev59_Cardocs_point_7_FF();
+		Dev59_Cardocs_point_8 obj = new Dev59_Cardocs_point_8();
 		obj.login_test_suit();
 
 		System.out.println("Strat again");

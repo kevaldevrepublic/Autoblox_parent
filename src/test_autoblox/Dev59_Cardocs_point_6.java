@@ -19,13 +19,13 @@ import com.gargoylesoftware.htmlunit.Version;
 
 
 
-public class Dev59_Cardocs_point_6_FF extends keywords 
+public class Dev59_Cardocs_point_6 extends keywords 
 {
 
 	private static String baseUrl;
 	private boolean acceptNextAlert = true;
 	private static StringBuffer verificationErrors = new StringBuffer();
-	final static Logger logger = Logger.getLogger(Dev59_Cardocs_point_6_FF.class);
+	final static Logger logger = Logger.getLogger(Dev59_Cardocs_point_6.class);
 
 
 
@@ -161,7 +161,7 @@ public class Dev59_Cardocs_point_6_FF extends keywords
 			System.out.println("Exception open new");
 			Thread.sleep(5000);
 			setUp();
-			Dev59_Cardocs_point_6_FF obj = new Dev59_Cardocs_point_6_FF();
+			Dev59_Cardocs_point_6 obj = new Dev59_Cardocs_point_6();
 			obj.login_test_suit();
 
 		}
@@ -187,7 +187,7 @@ public class Dev59_Cardocs_point_6_FF extends keywords
 		Thread.sleep(10000);
 		System.out.println("quit done");
 		setUp();
-		Dev59_Cardocs_point_6_FF obj = new Dev59_Cardocs_point_6_FF();
+		Dev59_Cardocs_point_6 obj = new Dev59_Cardocs_point_6();
 		obj.login_test_suit();
 
 		System.out.println("Strat again");
