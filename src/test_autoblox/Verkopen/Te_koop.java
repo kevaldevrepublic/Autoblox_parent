@@ -5,12 +5,11 @@ import test_autoblox.keywords;
 public class Te_koop extends keywords {
 
 
-	public static void  clickon_Kentekencards() 
+	public static void  clickon_Kentekencards() throws Throwable 
 	{
 		
+		mouse_move("id","ctl00_mmOwner_tab", "linkText","Te koop" );
 		
-		clickElement("id","ctl00_mmToDo_lnk");
-		clickElement("linkText","Te koop");
 							
 	
 	}

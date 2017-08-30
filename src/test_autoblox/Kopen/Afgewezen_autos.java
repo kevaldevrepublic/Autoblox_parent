@@ -5,12 +5,10 @@ import test_autoblox.keywords;
 public class Afgewezen_autos extends keywords {
 
 
-	public static void  clickon_Afgewezen_autos() 
+	public static void  clickon_Afgewezen_autos()  throws Throwable 
 	{
 		
-		
-		clickElement("id","ctl00_mmBuyer_lnk");
-		clickElement("linkText","Afgewezen auto's");
+		mouse_move("id","ctl00_mmBuyer_lnk", "linkText","Afgewezen auto's" );
 							
 	
 	}

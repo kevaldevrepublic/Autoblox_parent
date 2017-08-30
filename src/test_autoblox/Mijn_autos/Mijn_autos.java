@@ -5,12 +5,11 @@ import test_autoblox.keywords;
 public class Mijn_autos extends keywords {
 
 
-	public static void  clickon_Mijn_autos() 
+	public static void  clickon_Mijn_autos()  throws Throwable 
 	{
 		
-		
-		clickElement("id","ctl00_mmMyCars_lnk");
-		clickElement("linkText","Mijn auto's (beta)");
+		mouse_move("id","ctl00_mmMyCars_lnk", "linkText","Mijn auto's (beta)" );
+	
 							
 	
 	}

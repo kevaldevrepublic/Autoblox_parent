@@ -5,12 +5,11 @@ import test_autoblox.keywords;
 public class Help extends keywords {
 
 
-	public static void  clickon_Help() 
+	public static void  clickon_Help() throws Throwable 
 	{
 		
-		
-		clickElement("id","ctl00_mmFS_lnk");
-		clickElement("linkText","Help");
+		mouse_move("id","ctl00_mmFS_lnk", "linkText","Help" );
+
 							
 	
 	}

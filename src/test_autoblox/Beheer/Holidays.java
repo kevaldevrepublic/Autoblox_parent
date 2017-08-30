@@ -5,12 +5,11 @@ import test_autoblox.keywords;
 public class Holidays extends keywords {
 
 
-	public static void  clickon_Holidays() 
+	public static void  clickon_Holidays() throws Throwable 
 	{
 		
-		
-		clickElement("id","ctl00_mmFS_lnk");
-		clickElement("linkText","Holidays");
+		mouse_move("id","ctl00_mmFS_lnk", "linkText","Holidays" );
+
 							
 	
 	}

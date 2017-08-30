@@ -5,12 +5,12 @@ import test_autoblox.keywords;
 public class Slot_beheer extends keywords {
 
 
-	public static void  clickon_Slot_beheer() 
+	public static void  clickon_Slot_beheer() throws Throwable 
 	{
 		
-		
-		clickElement("id","ctl00_mmFS_lnk");
-		clickElement("linkText","Slot beheer");
+		mouse_move("id","ctl00_mmFS_lnk", "linkText","Slot beheer" );
+	
+
 							
 	
 	}

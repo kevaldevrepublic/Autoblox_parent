@@ -5,12 +5,13 @@ import test_autoblox.keywords;
 public class Diensten extends keywords {
 
 
-	public static void  clickon_Diensten() 
+	public static void  clickon_Diensten() throws Throwable 
 	{
 		
 		
-		clickElement("id","ctl00_mmToDo_lnk");
-		clickElement("linkText","Diensten");
+		mouse_move("id","ctl00_mmToDo_lnk", "linkText","Diensten" );
+	
+	
 							
 	
 	}

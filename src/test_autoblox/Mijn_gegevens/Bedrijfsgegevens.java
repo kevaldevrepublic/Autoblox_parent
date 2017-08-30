@@ -5,12 +5,11 @@ import test_autoblox.keywords;
 public class Bedrijfsgegevens extends keywords {
 
 
-	public static void  clickon_Bedrijfsgegevens() 
+	public static void  clickon_Bedrijfsgegevens()throws Throwable 
 	{
 		
-		
-		clickElement("id","ctl00_mmMyData_lnk");
-		clickElement("linkText","Bedrijfsgegevens");
+		mouse_move("id","ctl00_mmMyData_lnk", "linkText","Bedrijfsgegevens" ); 
+
 							
 	
 	}

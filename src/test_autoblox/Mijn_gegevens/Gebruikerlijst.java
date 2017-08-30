@@ -5,12 +5,11 @@ import test_autoblox.keywords;
 public class Gebruikerlijst extends keywords {
 
 
-	public static void  clickon_Gebruikerlijst() 
+	public static void  clickon_Gebruikerlijst() throws Throwable 
 	{
 		
-		
-		clickElement("id","ctl00_mmMyData_lnk");
-		clickElement("linkText","Gebruikerlijst");
+		mouse_move("id","ctl00_mmMyData_lnk", "linkText","Gebruikerlijst" );
+
 							
 	
 	}

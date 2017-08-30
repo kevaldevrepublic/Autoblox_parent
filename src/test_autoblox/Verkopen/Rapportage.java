@@ -5,12 +5,11 @@ import test_autoblox.keywords;
 public class Rapportage extends keywords {
 
 
-	public static void  clickon_Kentekencards() 
+	public static void  clickon_Kentekencards() throws Throwable 
 	{
 		
-		
-		clickElement("id","ctl00_mmToDo_lnk");
-		clickElement("linkText","Rapportage");
+		mouse_move("id","ctl00_mmOwner_tab", "linkText","Rapportage" );
+	
 							
 	
 	}

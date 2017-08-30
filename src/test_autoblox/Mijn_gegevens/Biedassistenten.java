@@ -5,13 +5,12 @@ import test_autoblox.keywords;
 public class Biedassistenten extends keywords {
 
 
-	public static void  clickon_Biedassistenten() 
+	public static void  clickon_Biedassistenten() throws Throwable 
 	{
 		
-		
-		clickElement("id","ctl00_mmMyData_lnk");
-		clickElement("linkText","Biedassistenten");
-							
+		mouse_move("id","ctl00_mmMyData_lnk", "linkText","Biedassistenten" );
+
+									
 	
 	}
 }

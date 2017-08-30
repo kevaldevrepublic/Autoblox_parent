@@ -5,12 +5,11 @@ import test_autoblox.keywords;
 public class Auto_zoeken extends keywords {
 
 
-	public static void  clickon_Auto_zoeken() 
+	public static void  clickon_Auto_zoeken() throws Throwable 
 	{
 		
-		
-		clickElement("id","ctl00_mmMyData_lnk");
-		clickElement("linkText","Auto zoeken");
+		mouse_move("id","ctl00_mmMyData_lnk", "linkText","Auto zoeken" );
+
 							
 	
 	}

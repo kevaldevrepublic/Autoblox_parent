@@ -5,13 +5,12 @@ import test_autoblox.keywords;
 public class Translations extends keywords {
 
 
-	public static void  clickon_Translations() 
+	public static void  clickon_Translations() throws Throwable 
 	{
 		
-		
-		clickElement("id","ctl00_mmFS_lnk");
-		clickElement("linkText","Translations");
-							
+		mouse_move("id","ctl00_mmFS_lnk", "linkText","Translations" );
+	
+
 	
 	}
 }

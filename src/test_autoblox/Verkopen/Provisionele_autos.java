@@ -5,12 +5,11 @@ import test_autoblox.keywords;
 public class Provisionele_autos extends keywords {
 
 
-	public static void  clickon_Kentekencards() 
+	public static void  clickon_Kentekencards() throws Throwable 
 	{
 		
+		mouse_move("id","ctl00_mmOwner_tab", "linkText","Provisionele auto's" );
 		
-		clickElement("id","ctl00_mmToDo_lnk");
-		clickElement("linkText","Provisionele auto's");
 							
 	
 	}

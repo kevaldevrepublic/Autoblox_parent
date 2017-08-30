@@ -5,12 +5,11 @@ import test_autoblox.keywords;
 public class Damage_Blueprints extends keywords {
 
 
-	public static void  clickon_Damage_Blueprints() 
+	public static void  clickon_Damage_Blueprints() throws Throwable 
 	{
 		
-		
-		clickElement("id","ctl00_mmFS_lnk");
-		clickElement("linkText","Damage Blueprints");
+		mouse_move("id","ctl00_mmFS_lnk", "linkText","Damage Blueprints" );
+	
 							
 	
 	}

@@ -5,13 +5,11 @@ import test_autoblox.keywords;
 public class Outstanding_Reports extends keywords {
 
 
-	public static void  clickon_Outstanding_Reports() 
+	public static void  clickon_Outstanding_Reports() throws Throwable 
 	{
 		
-		
-		clickElement("id","ctl00_mmFS_lnk");
-		clickElement("linkText","Outstanding Reports");
-							
+		mouse_move("id","ctl00_mmFS_lnk", "linkText","Outstanding Reports" );
+	
 	
 	}
 }

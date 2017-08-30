@@ -5,13 +5,11 @@ import test_autoblox.keywords;
 public class In_order extends keywords {
 
 
-	public static void  clickon_In_order() 
+	public static void  clickon_In_order() throws Throwable 
 	{
 		
-		
-		clickElement("id","ctl00_mmBuyer_lnk");
-		clickElement("linkText","In order");
-							
+		mouse_move("id","ctl00_mmBuyer_lnk", "linkText","In order" );
+	
 	
 	}
 }

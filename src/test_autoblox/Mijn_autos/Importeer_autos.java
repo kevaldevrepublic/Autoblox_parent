@@ -5,12 +5,10 @@ import test_autoblox.keywords;
 public class Importeer_autos extends keywords {
 
 
-	public static void  clickon_Importeer_autos() 
+	public static void  clickon_Importeer_autos()  throws Throwable 
 	{
 		
-		
-		clickElement("id","ctl00_mmMyCars_lnk");
-		clickElement("linkText","Importeer auto's");
+		mouse_move("id","ctl00_mmMyCars_lnk", "linkText","Importeer auto's" );
 							
 	
 	}

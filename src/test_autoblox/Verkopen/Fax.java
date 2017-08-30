@@ -5,13 +5,11 @@ import test_autoblox.keywords;
 public class Fax extends keywords {
 
 
-	public static void  clickon_Kentekencards() 
+	public static void  clickon_Kentekencards() throws Throwable 
 	{
 		
-		
-		clickElement("id","ctl00_mmToDo_lnk");
-		clickElement("linkText","Fax");
-							
+		mouse_move("id","ctl00_mmOwner_tab", "linkText","Fax" );
+	
 	
 	}
 }

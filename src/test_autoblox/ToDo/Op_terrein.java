@@ -5,12 +5,12 @@ import test_autoblox.keywords;
 public class Op_terrein extends keywords {
 
 
-	public static void  clickon_Op_terrein() 
+	public static void  clickon_Op_terrein() throws Throwable 
 	{
 		
 		
-		clickElement("id","ctl00_mmToDo_lnk");
-		clickElement("linkText","Op terrein");
+		mouse_move("id","ctl00_mmToDo_lnk", "linkText","Op terrein" );
+
 							
 	
 	}

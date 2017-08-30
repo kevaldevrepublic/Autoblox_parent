@@ -5,12 +5,12 @@ import test_autoblox.keywords;
 public class Pending extends keywords {
 
 
-	public static void  clickon_Pending() 
+	public static void  clickon_Pending() throws Throwable 
 	{
 		
 		
-		clickElement("id","ctl00_mmToDo_lnk");
-		clickElement("linkText","Pending");
+		mouse_move("id","ctl00_mmToDo_lnk", "linkText","Pending" );
+
 							
 	
 	}

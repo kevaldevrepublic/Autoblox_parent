@@ -5,12 +5,12 @@ import test_autoblox.keywords;
 public class Lookup_Maintenance extends keywords {
 
 
-	public static void  clickon_Lookup_Maintenance() 
+	public static void  clickon_Lookup_Maintenance() throws Throwable 
 	{
 		
-		
-		clickElement("id","ctl00_mmFS_lnk");
-		clickElement("linkText","Lookup Maintenance");
+		mouse_move("id","ctl00_mmFS_lnk", "linkText","Lookup Maintenance" );
+	
+	
 							
 	
 	}

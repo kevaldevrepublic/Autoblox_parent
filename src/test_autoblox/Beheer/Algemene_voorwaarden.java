@@ -5,13 +5,11 @@ import test_autoblox.keywords;
 public class Algemene_voorwaarden extends keywords {
 
 
-	public static void  clickon_Algemene_voorwaarden() 
+	public static void  clickon_Algemene_voorwaarden() throws Throwable 
 	{
 		
-		
-		clickElement("id","ctl00_mmFS_lnk");
-		clickElement("linkText","Algemene voorwaarden");
-							
+		mouse_move("id","ctl00_mmFS_lnk", "linkText","Algemene voorwaarden" );
+	
 	
 	}
 }

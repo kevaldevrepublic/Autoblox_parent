@@ -5,13 +5,11 @@ import test_autoblox.keywords;
 public class Service_History extends keywords {
 
 
-	public static void  clickon_Service_History() 
+	public static void  clickon_Service_History() throws Throwable 
 	{
 		
-		
-		clickElement("id","ctl00_mmMyData_lnk");
-		clickElement("linkText","Service History");
-							
+		mouse_move("id","ctl00_mmMyData_lnk", "linkText","Service History" );
+								
 	
 	}
 }

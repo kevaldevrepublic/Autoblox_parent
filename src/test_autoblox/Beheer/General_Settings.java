@@ -5,12 +5,11 @@ import test_autoblox.keywords;
 public class General_Settings extends keywords {
 
 
-	public static void  clickon_General_Settings() 
+	public static void  clickon_General_Settings() throws Throwable 
 	{
 		
-		
-		clickElement("id","ctl00_mmFS_lnk");
-		clickElement("linkText","General Settings");
+		mouse_move("id","ctl00_mmFS_lnk", "linkText","General Settings" );
+	
 							
 	
 	}

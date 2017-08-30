@@ -10,10 +10,7 @@ public class Gebruikergegevens extends keywords {
 	public static void  clickon_Gebruikergegevens() throws Exception 
 	{
 		
-		
-		clickElement("id","ctl00_mmMyData_lnk");
-		System.out.println("click on menu title");
-		clickElement("linkText","Gebruikergegevens");
+		mouse_move("id","ctl00_mmMyData_lnk", "linkText","Gebruikergegevens" );
 		System.out.println("click on user menu data popup");
 		driver.switchTo().frame("ctl00_ucModalFrame_mfFrame");
 		System.out.println("open popup");

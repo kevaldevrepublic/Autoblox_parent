@@ -5,12 +5,11 @@ import test_autoblox.keywords;
 public class Adresboek extends keywords {
 
 
-	public static void  clickon_Adresboek() 
+	public static void  clickon_Adresboek()  throws Throwable 
 	{
 		
+		mouse_move("id","ctl00_mmMyData_lnk", "linkText","Adresboek" );
 		
-		clickElement("id","ctl00_mmMyData_lnk");
-		clickElement("linkText","Adresboek");
 							
 	
 	}

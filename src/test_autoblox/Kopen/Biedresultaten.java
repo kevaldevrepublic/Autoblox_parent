@@ -5,12 +5,11 @@ import test_autoblox.keywords;
 public class Biedresultaten extends keywords {
 
 
-	public static void  clickon_Biedresultaten() 
+	public static void  clickon_Biedresultaten() throws Throwable 
 	{
 		
-		
-		clickElement("id","ctl00_mmBuyer_lnk");
-		clickElement("linkText","Biedresultaten");
+		mouse_move("id","ctl00_mmBuyer_lnk", "linkText","Biedresultaten" );
+	
 							
 	
 	}

@@ -5,12 +5,11 @@ import test_autoblox.keywords;
 public class Damage_Depreciations extends keywords {
 
 
-	public static void  clickon_Damage_Depreciations() 
+	public static void  clickon_Damage_Depreciations() throws Throwable 
 	{
 		
-		
-		clickElement("id","ctl00_mmFS_lnk");
-		clickElement("linkText","Damage Depreciations");
+		mouse_move("id","ctl00_mmFS_lnk", "linkText","Damage Depreciations" );
+	
 							
 	
 	}

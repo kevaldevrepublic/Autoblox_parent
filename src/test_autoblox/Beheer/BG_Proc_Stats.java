@@ -5,12 +5,11 @@ import test_autoblox.keywords;
 public class BG_Proc_Stats extends keywords {
 
 
-	public static void  clickon_BG_Proc_Stats() 
+	public static void  clickon_BG_Proc_Stats() throws Throwable 
 	{
 		
-		
-		clickElement("id","ctl00_mmFS_lnk");
-		clickElement("linkText","BG Proc Stats");
+		mouse_move("id","ctl00_mmFS_lnk", "linkText","BG Proc Stats" );
+
 							
 	
 	}

@@ -5,12 +5,12 @@ import test_autoblox.keywords;
 public class SilverDAT_Configuration extends keywords {
 
 
-	public static void  clickon_SilverDAT_Configuration() 
+	public static void  clickon_SilverDAT_Configuration() throws Throwable 
 	{
 		
-		
-		clickElement("id","ctl00_mmFS_lnk");
-		clickElement("linkText","SilverDAT Configuration");
+		mouse_move("id","ctl00_mmFS_lnk", "linkText","SilverDAT Configuration" );
+	
+	
 							
 	
 	}

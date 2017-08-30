@@ -5,12 +5,12 @@ import test_autoblox.keywords;
 public class Transport extends keywords {
 
 
-	public static void  clickon_Transport() 
+	public static void  clickon_Transport() throws Throwable 
 	{
 		
 		
-		clickElement("id","ctl00_mmToDo_lnk");
-		clickElement("linkText","Transport");
+		mouse_move("id","ctl00_mmToDo_lnk", "linkText","Transport" );
+
 							
 	
 	}

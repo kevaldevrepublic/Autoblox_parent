@@ -5,13 +5,11 @@ import test_autoblox.keywords;
 public class ATR_Templates extends keywords {
 
 
-	public static void  clickon_ATR_Templates() 
+	public static void  clickon_ATR_Templates() throws Throwable 
 	{
 		
-		
-		clickElement("id","ctl00_mmFS_lnk");
-		clickElement("linkText","ATR Templates");
-							
+		mouse_move("id","ctl00_mmFS_lnk", "linkText","ATR Templates" );
+								
 	
 	}
 }

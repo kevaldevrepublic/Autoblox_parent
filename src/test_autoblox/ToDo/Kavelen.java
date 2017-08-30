@@ -4,13 +4,15 @@ import test_autoblox.keywords;
 
 public class Kavelen extends keywords {
 
-
-	public static void  clickon_Kavelen() 
+	
+	public static void  clickon_Kavelen() throws Throwable 
 	{
 		
 		
-		clickElement("id","ctl00_mmToDo_lnk");
-		clickElement("linkText","Kavelen");
+		mouse_move("id","ctl00_mmToDo_lnk", "linkText","Kavelen" );
+	
+		
+		
 							
 	
 	}

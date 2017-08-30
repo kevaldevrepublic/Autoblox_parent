@@ -5,12 +5,11 @@ import test_autoblox.keywords;
 public class ATR_Price_Lists extends keywords {
 
 
-	public static void  clickon_ATR_Price_Lists() 
+	public static void  clickon_ATR_Price_Lists() throws Throwable 
 	{
 		
-		
-		clickElement("id","ctl00_mmFS_lnk");
-		clickElement("linkText","ATR Price Lists");
+		mouse_move("id","ctl00_mmFS_lnk", "linkText","ATR Price Lists" );
+	
 							
 	
 	}

@@ -5,13 +5,11 @@ import test_autoblox.keywords;
 public class Messages extends keywords {
 
 
-	public static void  clickon_Messages() 
+	public static void  clickon_Messages() throws Throwable 
 	{
 		
-		
-		clickElement("id","ctl00_mmFS_lnk");
-		clickElement("linkText","Messages");
-							
+		mouse_move("id","ctl00_mmFS_lnk", "linkText","Messages" );
+
 	
 	}
 }
