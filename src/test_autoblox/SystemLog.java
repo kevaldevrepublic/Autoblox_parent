@@ -160,10 +160,10 @@ public class SystemLog extends keywords
 		Thread.sleep(10000);
 		System.out.println("quit done");
 		setUp();
-		SystemLog obj = new SystemLog();
+		/*SystemLog obj = new SystemLog();
 		obj.login_test_suit();
 
-		System.out.println("Strat again");
+		System.out.println("Strat again");*/
 
 		String verificationErrorString = verificationErrors.toString();
 		if (!"".equals(verificationErrorString)) {
