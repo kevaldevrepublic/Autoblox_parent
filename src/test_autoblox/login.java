@@ -38,13 +38,22 @@ public class login extends keywords
         System.out.println("Open Link -> " + link);
         Thread.sleep(5000);
 	  }
+	  
+	  public static void navigateMBLink()  throws Exception 
+	  {
+	    openURL("https://mb.autoblox.eu/Login.aspx");
+	    
+        String link = currentURL();
+        System.out.println("Open Link -> " + link);
+        Thread.sleep(5000);
+	  }
         
 	  
 	  public static void  correctLogin()  throws Exception 
         	{
 		 
 		  excelpath();
-         	 String a=excel_datadriven.getCellData(1, 0);
+         	 String a=excel_datadriven.getCellData(6, 0);
          	 
 		/*  for(int i=1; i<20; i++){
 			 java.lang.String a = excel_datadriven.getCellData1(i, 0);
@@ -80,7 +89,7 @@ public class login extends keywords
 	  
         public static void  logout()
         {
-        	 clickElement("xpath", ".//*[@id='aspnetForm']/div[4]/table[1]/tbody/tr/td/table/tbody/tr[2]/td[7]/a");
+        	 clickElement("xpath", "/html[1]/body[1]/form[1]/div[4]/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[2]/td[7]/a[1]");
         	 System.out.println("Done logout");
         }
                

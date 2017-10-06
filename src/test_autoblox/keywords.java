@@ -124,6 +124,12 @@ public class keywords {
 		excel_datadriven.setExcelFile("D:\\Keval\\Data\\Selenium\\Scripts\\live\\Autoblox_parent\\src\\excel_datadriven\\datadrivenExcel1.xlsx", "Sheet1");
 
 	}
+	public static  void excelpath_createcar()throws Exception
+	{
+		excel_datadriven.setExcelFile("D:\\Keval\\Data\\Selenium\\Scripts\\live\\Autoblox_parent\\src\\excel_datadriven\\createcar_details.xlsx", "Sheet1");
+
+	}
+	
 	public static  void excelpath_sheet2()throws Exception
 	{
 		excel_datadriven.setExcelFile("D:\\Keval\\Data\\Selenium\\Scripts\\live\\Autoblox_parent\\src\\excel_datadriven\\datadrivenExcel.xlsx", "Sheet2");
@@ -254,19 +260,13 @@ public class keywords {
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(Byelement(Type, Path)));	  
 	}
-	public static  void multiplewindow() throws Exception
+	public static  String multiplewindow() throws Exception
 	{
 		{
 			//driver.get();
 			String parentWindowHandle = driver.getWindowHandle();
 			System.out.println("Parent window's handle -> " + parentWindowHandle);
-			WebElement clickElement = driver.findElement(By.id("button1")); 
-
-			//for(int i = 0; i < 3; i++)
-			//{
-			//clickElement.click();
-			//Thread.sleep(3000);
-			//}
+			
 
 			java.util.Set<String> allWindowHandles = driver.getWindowHandles();
 			String lastWindowHandle = "";
@@ -279,34 +279,90 @@ public class keywords {
 				{
 
 					System.out.println("Switching to window - > " + handle);
-					System.out.println("Navigating to google.com");
+					System.out.println("Navigating to vsb details");
 					driver.switchTo().window(handle); //Switch to the desired window first and then execute commands using driver
-
-					Thread.sleep(3000);
-					clearElement("id","email");
-
-					insertElement("id","email","qadevrepublic1@gmail.com");
-
-					clearElement("id","pass");
-
-					insertElement("id","pass","DevHero@123");
-
-					clickElement("id", "loginbutton");
-					//driver.get("http://google.com");
-					lastWindowHandle = handle;
-					driver.close();
+					//System.out.println("switching handle");
+					//
+					Thread.sleep(5000);
+					
+					
+					
+					//clickElement("id", "ucCarDetails_tbsCarDetails_tbbBasicInfo_bTab");
+					Thread.sleep(5000);
+					
+					String VSBdetails = getText ("xpath","/html[1]/body[1]/form[1]/div[3]/div[1]");
+					//String VSBdetails1 = getText ("xpath","//*[@id:pnlTOP][][@class,'cModalHeader']");
+					System.out.println(VSBdetails);
+					
+					//String VSBdetails2 = getText("xpath","//div[starts-with(text(),VSB)]");
+					//System.out.println(VSBdetails2);
+					
+					String str = VSBdetails;
+			        
+					   String[] tokens = str.split(" ");
+				
+				        String sub = tokens[1];
+				        String[] p = sub.split(",");
+				        String VSB = p[0];
+				        System.out.println(VSB);
+				        Thread.sleep(3000);
+				        
+				        driver.close();
+						
+						driver.switchTo().window(parentWindowHandle);
+						System.out.println("window close, move to parent");
+				        //return VSB;
+				       
+					
+					//lastWindowHandle = handle;
+					
 				}
 			}
 
 			//Switch to the parent window
-			//driver.switchTo().window(parentWindowHandle);
+			
 			//close the parent window
 
 			//at this point there is no focused window, we have to explicitly switch back to some window.
-			driver.switchTo().window(lastWindowHandle);
+			//driver.switchTo().window(lastWindowHandle);
 			//driver.get("http://www.yepme.com/");
 			// ERROR: Caught exception [ERROR: Unsupported command [waitForPopUp | _blank | 30000]]
 		}
+		return null;
+	}
+	public static  String multiplewindow2() throws Exception
+	{
+		{
+			//driver.get();
+			String parentWindowHandle = driver.getWindowHandle();
+			//System.out.println("Parent window's handle -> " + parentWindowHandle);
+			
+
+			java.util.Set<String> allWindowHandles = driver.getWindowHandles();
+			String lastWindowHandle = "";
+
+
+			for(String handle : allWindowHandles)
+			{
+				//System.out.println(handle);
+				if (handle.equals(parentWindowHandle)== false)
+				{
+
+					
+					driver.switchTo().window(handle); //Switch to the desired window first and then execute commands using driver
+					//System.out.println("switching handle");
+
+				        driver.close();
+						System.out.println("window close");
+
+				}
+			}
+
+			
+			driver.switchTo().window(lastWindowHandle);
+		
+		}
+		return null;
 	}
 	public static void dropdownByIndex(String Type, String path, int Index) 
 	{  
