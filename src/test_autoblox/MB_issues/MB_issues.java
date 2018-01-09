@@ -21,8 +21,7 @@ public class MB_issues extends keywords {
 
 	public static void createcar(java.lang.String search_insert) throws Exception {
 
-		String VSB = getText("xpath",
-				"html/body/form/div[4]/table[3]/tbody/tr[2]/td[2]/div/div[1]/div[2]/table/tbody/tr[3]/td[2]/table/tbody/tr/td[3]/label");
+		String VSB = getText("xpath","/html[1]/body[1]/form[1]/div[4]/table[2]/tbody[1]/tr[2]/td[2]/div[1]/div[1]/div[2]/table[1]/tbody[1]/tr[3]/td[2]/table[1]/tbody[1]/tr[1]/td[3]/label[1]");
 
 		System.out.println(VSB);
 		Thread.sleep(5000);
@@ -49,11 +48,12 @@ public class MB_issues extends keywords {
 		System.out.println("select administration Company - All");
 		Thread.sleep(5000);
 
-		clickElement("id", "ctl00_cphContent_mctlCompanySelection_ucControlLoader_ctl00_gvList_ctl04_ibSelect");
+		clickElement("id", "ctl00_cphContent_mctlCompanySelection_ucControlLoader_ctl00_gvList_ctl03_ibSelect");
+		
 		System.out.println("admin selected");
 		Thread.sleep(5000);
 
-		clickElement("id", "ctl00_cphContent_rbProtocol_82818");
+		clickElement("id", "ctl00_cphContent_rbProtocol_69774");
 		Thread.sleep(5000);
 		System.out.println("selected admin companyname protocol");
 
@@ -77,8 +77,7 @@ public class MB_issues extends keywords {
 		Thread.sleep(5000);
 		clickElement("id", "ctl00_cphContent_dsDateFirstRegINT_imgDateS");
 		Thread.sleep(5000);
-		clickElement("xpath",
-				"html/body/form/div[4]/table[3]/tbody/tr[2]/td[2]/div/div[1]/div[2]/table[1]/tbody/tr[13]/td[2]/div/div[4]/div[1]");
+		clickElement("xpath","/html[1]/body[1]/form[1]/div[4]/table[2]/tbody[1]/tr[2]/td[2]/div[1]/div[1]/div[2]/table[1]/tbody[1]/tr[13]/td[2]/div[1]/div[4]/div[1]");
 		System.out.println("date selected");
 		Thread.sleep(5000);
 
@@ -103,7 +102,7 @@ public class MB_issues extends keywords {
 		System.out.println("click on search address");
 
 		clickElement("id",
-				"ctl00_cphContent_ucProtocolData_0_ucLocation_mctlAddressSelection_ucControlLoader_ctl00_gvList_ctl05_btnSelect");
+				"ctl00_cphContent_ucProtocolData_0_ucLocation_mctlAddressSelection_ucControlLoader_ctl00_gvList_ctl03_btnSelect");
 		Thread.sleep(5000);
 		System.out.println("select address");
 

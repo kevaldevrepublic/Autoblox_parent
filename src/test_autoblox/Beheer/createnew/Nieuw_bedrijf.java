@@ -12,7 +12,7 @@ public class Nieuw_bedrijf extends keywords
 	 
 		final static Logger logger = Logger.getLogger(loginsuit.class);
 		
-		public static void  required_fields () throws Exception
+		public static void  required_fields () throws Throwable
 		 
 		{
 			test_autoblox.Beheer.Bedrijfs_beheer.clickon_Bedrijfs_beheer();

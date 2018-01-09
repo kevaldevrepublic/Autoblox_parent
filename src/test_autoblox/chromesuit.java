@@ -55,7 +55,7 @@ public class chromesuit extends keywords {
 
 	  @Test
 
-	  public void login_test_suit() throws Exception 
+	  public void login_test_suit() throws Throwable 
 	  {
 		  
 		  login.navigateLogin();

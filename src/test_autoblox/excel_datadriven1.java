@@ -18,7 +18,7 @@ package test_autoblox;
 
         		private static XSSFWorkbook ExcelWBook;
 
-        		private static XSSFCell Cell;
+        		private static XSSFRow Cell;
 
         		private static XSSFRow Row;
 
