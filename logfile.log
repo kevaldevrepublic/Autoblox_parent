@@ -1,128 +1,52 @@
-2017-07-19 18:01:46,533 INFO  [Dev59_Cardocs_point_8_FF] Enter in website 
-2017-07-19 18:01:48,374 INFO  [Dev59_Cardocs_point_8_FF] login sucessfull 
-2017-07-19 18:20:56,726 INFO  [Dev59_Cardocs_point_8_FF] Enter in website 
-2017-07-19 18:20:57,674 INFO  [Dev59_Cardocs_point_8_FF] login sucessfull 
-2017-07-19 18:21:56,560 INFO  [Dev59_Cardocs_point_8_FF] Unexpected Error 
-2017-07-19 18:23:43,429 INFO  [Dev59_Cardocs_point_8_FF] Enter in website 
-2017-07-19 18:23:44,415 INFO  [Dev59_Cardocs_point_8_FF] login sucessfull 
-2017-07-19 18:24:39,485 INFO  [Dev59_Cardocs_point_8_FF] Unexpected Error 
-2017-07-19 18:26:58,385 INFO  [Dev59_Cardocs_point_8_FF] Enter in website 
-2017-07-19 18:26:59,345 INFO  [Dev59_Cardocs_point_8_FF] login sucessfull 
-2017-07-19 18:27:45,025 INFO  [Dev59_Cardocs_point_8_FF] Unexpected Error 
-2017-07-19 18:28:31,230 INFO  [Dev59_Cardocs_point_8_FF] Enter in website 
-2017-07-19 18:28:32,173 INFO  [Dev59_Cardocs_point_8_FF] login sucessfull 
-2017-07-19 18:29:27,547 INFO  [Dev59_Cardocs_point_8_FF] Unexpected Error 
-2017-07-19 18:33:05,144 INFO  [Dev59_Cardocs_point_8_FF] Enter in website 
-2017-07-19 18:33:06,121 INFO  [Dev59_Cardocs_point_8_FF] login sucessfull 
-2017-07-19 18:33:52,493 INFO  [Dev59_Cardocs_point_8_FF] Unexpected Error 
-2017-07-19 18:34:09,120 INFO  [Dev59_Cardocs_point_8_FF] logout successfully 
-2017-07-19 18:36:24,448 INFO  [Dev89_Bedrijfsgegevens] Enter in website 
-2017-07-19 18:36:25,383 INFO  [Dev89_Bedrijfsgegevens] login sucessfull 
-2017-07-19 18:37:28,251 INFO  [Dev89_Bedrijfsgegevens] Unexpected Error 
-2017-07-19 18:37:49,776 INFO  [Dev89_Bedrijfsgegevens] logout successfully 
-2017-07-19 18:39:57,157 INFO  [Dev89_Bedrijfsgegevens] Enter in website 
-2017-07-19 18:39:58,262 INFO  [Dev89_Bedrijfsgegevens] login sucessfull 
-2017-07-19 18:51:10,352 INFO  [Dev89_Bedrijfsgegevens] Enter in website 
-2017-07-19 18:51:11,410 INFO  [Dev89_Bedrijfsgegevens] login sucessfull 
-2017-07-19 18:53:04,223 INFO  [Dev89_Bedrijfsgegevens] logout successfully 
-2017-07-19 18:54:21,243 INFO  [Dev89_Bedrijfsgegevens] Enter in website 
-2017-07-19 18:54:22,247 INFO  [Dev89_Bedrijfsgegevens] login sucessfull 
-2017-07-19 18:56:11,033 INFO  [Dev89_Bedrijfsgegevens] logout successfully 
-2017-07-20 12:08:53,240 INFO  [Dev89_Bedrijfsgegevens] Enter in website 
-2017-07-20 12:08:54,725 INFO  [Dev89_Bedrijfsgegevens] login sucessfull 
-2017-07-20 12:10:50,788 INFO  [Dev89_Bedrijfsgegevens] logout successfully 
-2017-07-20 12:15:26,749 INFO  [Dev89_Bedrijfsgegevens] Enter in website 
-2017-07-20 12:15:27,757 INFO  [Dev89_Bedrijfsgegevens] login sucessfull 
-2017-07-20 12:15:59,998 INFO  [Dev89_Bedrijfsgegevens] Unexpected Error 
-2017-07-20 12:16:15,693 INFO  [Dev89_Bedrijfsgegevens] logout successfully 
-2017-07-20 12:21:32,424 INFO  [Dev89_Bedrijfsgegevens] Enter in website 
-2017-07-20 12:21:33,532 INFO  [Dev89_Bedrijfsgegevens] login sucessfull 
-2017-07-20 12:22:03,708 INFO  [Dev89_Bedrijfsgegevens] Unexpected Error 
-2017-07-20 12:22:19,519 INFO  [Dev89_Bedrijfsgegevens] logout successfully 
-2017-07-20 12:24:20,318 INFO  [Dev89_Bedrijfsgegevens] Enter in website 
-2017-07-20 12:24:21,328 INFO  [Dev89_Bedrijfsgegevens] login sucessfull 
-2017-07-20 12:24:52,853 INFO  [Dev89_Bedrijfsgegevens] Unexpected Error 
-2017-07-20 12:26:05,767 INFO  [Dev89_Bedrijfsgegevens] Enter in website 
-2017-07-20 12:26:06,954 INFO  [Dev89_Bedrijfsgegevens] login sucessfull 
-2017-07-20 12:26:36,819 INFO  [Dev89_Bedrijfsgegevens] Unexpected Error 
-2017-07-20 12:27:52,488 INFO  [Dev89_Bedrijfsgegevens] Enter in website 
-2017-07-20 12:27:53,500 INFO  [Dev89_Bedrijfsgegevens] login sucessfull 
-2017-07-20 12:29:40,548 INFO  [Dev89_Bedrijfsgegevens] Enter in website 
-2017-07-20 12:29:41,505 INFO  [Dev89_Bedrijfsgegevens] login sucessfull 
-2017-07-20 12:38:37,336 INFO  [Dev89_Bedrijfsgegevens] Enter in website 
-2017-07-20 12:38:38,283 INFO  [Dev89_Bedrijfsgegevens] login sucessfull 
-2017-07-20 12:41:59,823 INFO  [Dev89_Bedrijfsgegevens] Enter in website 
-2017-07-20 12:42:00,817 INFO  [Dev89_Bedrijfsgegevens] login sucessfull 
-2017-07-20 12:43:57,731 INFO  [Dev89_Bedrijfsgegevens] Enter in website 
-2017-07-20 12:43:58,658 INFO  [Dev89_Bedrijfsgegevens] login sucessfull 
-2017-07-20 12:51:35,260 INFO  [Dev89_Bedrijfsgegevens] Enter in website 
-2017-07-20 12:51:36,193 INFO  [Dev89_Bedrijfsgegevens] login sucessfull 
-2017-07-20 12:53:09,437 INFO  [Dev89_Bedrijfsgegevens] Enter in website 
-2017-07-20 12:53:10,377 INFO  [Dev89_Bedrijfsgegevens] login sucessfull 
-2017-07-20 12:56:24,782 INFO  [Dev89_Bedrijfsgegevens] Enter in website 
-2017-07-20 12:56:25,735 INFO  [Dev89_Bedrijfsgegevens] login sucessfull 
-2017-07-20 13:00:32,767 INFO  [Dev89_Bedrijfsgegevens] Enter in website 
-2017-07-20 13:00:33,790 INFO  [Dev89_Bedrijfsgegevens] login sucessfull 
-2017-07-20 13:08:07,895 INFO  [Dev89_Bedrijfsgegevens] Enter in website 
-2017-07-20 13:08:08,827 INFO  [Dev89_Bedrijfsgegevens] login sucessfull 
-2017-07-20 13:15:17,119 INFO  [Dev89_Bedrijfsgegevens] Enter in website 
-2017-07-20 13:15:18,055 INFO  [Dev89_Bedrijfsgegevens] login sucessfull 
-2017-07-20 13:17:25,832 INFO  [Dev89_Bedrijfsgegevens] Enter in website 
-2017-07-20 13:17:26,851 INFO  [Dev89_Bedrijfsgegevens] login sucessfull 
-2017-07-20 13:21:49,513 INFO  [Dev89_Bedrijfsgegevens] Enter in website 
-2017-07-20 13:21:50,440 INFO  [Dev89_Bedrijfsgegevens] login sucessfull 
-2017-07-20 13:25:00,875 INFO  [Dev89_Bedrijfsgegevens] Enter in website 
-2017-07-20 13:25:01,823 INFO  [Dev89_Bedrijfsgegevens] login sucessfull 
-2017-07-20 13:28:21,305 INFO  [Dev89_Bedrijfsgegevens] Enter in website 
-2017-07-20 13:28:22,404 INFO  [Dev89_Bedrijfsgegevens] login sucessfull 
-2017-07-20 13:31:10,240 INFO  [Dev89_Bedrijfsgegevens] Enter in website 
-2017-07-20 13:31:11,223 INFO  [Dev89_Bedrijfsgegevens] login sucessfull 
-2017-07-20 15:48:34,440 INFO  [Dev89_Bedrijfsgegevens] Enter in website 
-2017-07-20 15:48:35,966 INFO  [Dev89_Bedrijfsgegevens] login sucessfull 
-2017-07-20 15:52:24,513 INFO  [Dev89_Bedrijfsgegevens] Enter in website 
-2017-07-20 15:52:25,493 INFO  [Dev89_Bedrijfsgegevens] login sucessfull 
-2017-07-20 17:02:37,615 INFO  [Dev89_Bedrijfsgegevens] Enter in website 
-2017-07-20 17:02:38,594 INFO  [Dev89_Bedrijfsgegevens] login sucessfull 
-2017-07-20 17:08:56,894 INFO  [Dev89_Bedrijfsgegevens] Enter in website 
-2017-07-20 17:08:57,891 INFO  [Dev89_Bedrijfsgegevens] login sucessfull 
-2017-07-20 17:13:44,563 INFO  [Dev89_Bedrijfsgegevens] Enter in website 
-2017-07-20 17:13:45,591 INFO  [Dev89_Bedrijfsgegevens] login sucessfull 
-2017-07-20 17:26:54,943 INFO  [Dev89_Bedrijfsgegevens] Enter in website 
-2017-07-20 17:26:56,017 INFO  [Dev89_Bedrijfsgegevens] login sucessfull 
-2017-07-20 18:10:13,980 INFO  [Dev89_Bedrijfsgegevens] Enter in website 
-2017-07-20 18:10:14,995 INFO  [Dev89_Bedrijfsgegevens] login sucessfull 
-2017-07-20 18:11:57,627 INFO  [Dev89_Bedrijfsgegevens] Enter in website 
-2017-07-20 18:11:58,632 INFO  [Dev89_Bedrijfsgegevens] login sucessfull 
-2017-07-20 18:15:19,767 INFO  [Dev89_Bedrijfsgegevens] Enter in website 
-2017-07-20 18:15:20,762 INFO  [Dev89_Bedrijfsgegevens] login sucessfull 
-2017-07-20 18:19:59,861 INFO  [Dev89_Bedrijfsgegevens] Enter in website 
-2017-07-20 18:20:00,825 INFO  [Dev89_Bedrijfsgegevens] login sucessfull 
-2017-07-20 18:25:51,806 INFO  [Dev89_Bedrijfsgegevens] Enter in website 
-2017-07-20 18:25:52,749 INFO  [Dev89_Bedrijfsgegevens] login sucessfull 
-2017-07-20 18:56:49,245 INFO  [Dev89_Bedrijfsgegevens] Enter in website 
-2017-07-20 18:56:50,216 INFO  [Dev89_Bedrijfsgegevens] login sucessfull 
-2017-07-21 12:26:01,377 INFO  [Dev89_Bedrijfsgegevens] Enter in website 
-2017-07-21 12:26:02,594 INFO  [Dev89_Bedrijfsgegevens] login sucessfull 
-2017-07-21 12:32:28,891 INFO  [Dev89_Bedrijfsgegevens] Enter in website 
-2017-07-21 12:32:29,864 INFO  [Dev89_Bedrijfsgegevens] login sucessfull 
-2017-07-21 12:36:50,265 INFO  [Dev89_Bedrijfsgegevens] Enter in website 
-2017-07-21 12:36:51,236 INFO  [Dev89_Bedrijfsgegevens] login sucessfull 
-2017-07-21 12:40:41,072 INFO  [Dev89_Bedrijfsgegevens] Enter in website 
-2017-07-21 12:40:42,055 INFO  [Dev89_Bedrijfsgegevens] login sucessfull 
-2017-07-21 12:42:55,110 INFO  [Dev89_Bedrijfsgegevens] Enter in website 
-2017-07-21 12:42:56,128 INFO  [Dev89_Bedrijfsgegevens] login sucessfull 
-2017-07-21 12:48:51,251 INFO  [Dev89_Bedrijfsgegevens] Enter in website 
-2017-07-21 12:48:52,230 INFO  [Dev89_Bedrijfsgegevens] login sucessfull 
-2017-07-21 13:27:16,364 INFO  [Dev89_Bedrijfsgegevens] Enter in website 
-2017-07-21 13:27:17,333 INFO  [Dev89_Bedrijfsgegevens] login sucessfull 
-2017-07-21 13:43:03,608 INFO  [Dev89_Bedrijfsgegevens] Enter in website 
-2017-07-21 13:43:04,565 INFO  [Dev89_Bedrijfsgegevens] login sucessfull 
-2017-07-21 13:46:45,770 INFO  [Dev89_Bedrijfsgegevens] Enter in website 
-2017-07-21 13:46:46,755 INFO  [Dev89_Bedrijfsgegevens] login sucessfull 
-2017-07-21 14:41:25,392 INFO  [Dev89_Bedrijfsgegevens] Enter in website 
-2017-07-21 14:41:26,337 INFO  [Dev89_Bedrijfsgegevens] login sucessfull 
-2017-07-21 14:49:44,640 INFO  [Dev89_Bedrijfsgegevens] Enter in website 
-2017-07-21 14:49:45,566 INFO  [Dev89_Bedrijfsgegevens] login sucessfull 
-2017-07-21 16:08:25,320 INFO  [Dev89_Bedrijfsgegevens] Enter in website 
-2017-07-21 16:08:26,267 INFO  [Dev89_Bedrijfsgegevens] login sucessfull 
-2017-07-21 17:32:58,387 INFO  [Dev89_Bedrijfsgegevens] Unexpected Error 
+2018-01-09 16:14:26,434 INFO  [Regression_Acceptance] Enter in website 
+2018-01-09 16:14:29,994 INFO  [Regression_Acceptance] login sucessfull 
+2018-01-09 16:15:46,193 INFO  [Regression_Acceptance] Click on home button from menubar 
+2018-01-09 16:15:48,382 INFO  [Regression_Acceptance] logout successfully 
+2018-01-09 16:23:26,469 INFO  [Regression_Acceptance] Enter in website 
+2018-01-09 16:23:30,047 INFO  [Regression_Acceptance] login sucessfull 
+2018-01-09 16:24:29,006 INFO  [Regression_Acceptance] Click on home button from menubar 
+2018-01-09 16:24:31,204 INFO  [Regression_Acceptance] logout successfully 
+2018-01-09 17:36:24,799 INFO  [Regression_Acceptance] Enter in website 
+2018-01-09 17:36:28,546 INFO  [Regression_Acceptance] login sucessfull 
+2018-01-09 17:37:32,753 INFO  [Regression_Acceptance] Click on home button from menubar 
+2018-01-09 17:37:35,198 INFO  [Regression_Acceptance] open company list page 
+2018-01-09 17:37:37,198 INFO  [Regression_Acceptance] open:->open_Companylist  
+2018-01-09 17:37:39,907 INFO  [Regression_Acceptance] mycar page open 
+2018-01-09 17:37:41,924 INFO  [Regression_Acceptance] open:->mycar 
+2018-01-09 17:37:42,109 INFO  [Regression_Acceptance] payment page is open 
+2018-01-09 17:38:00,331 INFO  [Regression_Acceptance] select all radio button and select search button also click on pdf button as well as download invoice 
+2018-01-09 17:38:00,334 INFO  [Regression_Acceptance] open:->Betalingen_payment 
+2018-01-09 17:38:01,692 INFO  [Regression_Acceptance] logout successfully 
+2018-01-09 18:00:37,080 INFO  [Regression_Acceptance] Enter in website 
+2018-01-09 18:00:40,843 INFO  [Regression_Acceptance] login sucessfull 
+2018-01-09 18:20:18,351 INFO  [Regression_Acceptance] Enter in website 
+2018-01-09 18:20:22,018 INFO  [Regression_Acceptance] login sucessfull 
+2018-01-09 18:21:16,732 INFO  [Regression_Acceptance] Click on home button from menubar 
+2018-01-09 18:21:19,133 INFO  [Regression_Acceptance] open system log 
+2018-01-09 18:21:23,050 INFO  [Regression_Acceptance] logout successfully 
+2018-01-09 18:22:01,342 INFO  [Regression_Acceptance] Enter in website 
+2018-01-09 18:22:04,910 INFO  [Regression_Acceptance] login sucessfull 
+2018-01-09 18:23:06,132 INFO  [Regression_Acceptance] Click on home button from menubar 
+2018-01-09 18:23:08,660 INFO  [Regression_Acceptance] open system log 
+2018-01-09 18:23:12,975 INFO  [Regression_Acceptance] logout successfully 
+2018-01-09 18:39:52,557 INFO  [Regression_Acceptance] Enter in website 
+2018-01-09 18:39:56,243 INFO  [Regression_Acceptance] login sucessfull 
+2018-01-09 18:40:57,680 INFO  [Regression_Acceptance] Click on home button from menubar 
+2018-01-09 18:41:00,268 INFO  [Regression_Acceptance] open company list page 
+2018-01-09 18:41:02,281 INFO  [Regression_Acceptance] open:->open_Companylist  
+2018-01-09 18:41:04,217 INFO  [Regression_Acceptance] mycar page open 
+2018-01-09 18:41:06,218 INFO  [Regression_Acceptance] open:->mycar 
+2018-01-09 18:41:06,401 INFO  [Regression_Acceptance] payment page is open 
+2018-01-09 18:41:24,283 INFO  [Regression_Acceptance] select all radio button and select search button also click on pdf button as well as download invoice 
+2018-01-09 18:41:24,283 INFO  [Regression_Acceptance] open:->Betalingen_payment 
+2018-01-09 18:41:24,824 INFO  [Regression_Acceptance] open system log 
+2018-01-09 18:44:43,346 INFO  [Regression_Acceptance] Enter in website 
+2018-01-09 18:44:46,886 INFO  [Regression_Acceptance] login sucessfull 
+2018-01-09 18:45:51,126 INFO  [Regression_Acceptance] Click on home button from menubar 
+2018-01-09 18:45:53,568 INFO  [Regression_Acceptance] open system log 
+2018-01-09 18:48:48,313 INFO  [Regression_Acceptance] Enter in website 
+2018-01-09 18:48:52,105 INFO  [Regression_Acceptance] login sucessfull 
+2018-01-09 18:49:48,259 INFO  [Regression_Acceptance] Click on home button from menubar 
+2018-01-09 18:49:50,679 INFO  [Regression_Acceptance] open system log 
+2018-01-09 18:50:01,751 INFO  [Regression_Acceptance] open:-> Syatemlog 
+2018-01-09 18:50:02,010 INFO  [Regression_Acceptance] logout successfully 

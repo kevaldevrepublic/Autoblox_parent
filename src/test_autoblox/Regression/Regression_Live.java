@@ -1,4 +1,4 @@
-package test_autoblox;
+package test_autoblox.Regression;
 
 import java.util.Iterator;
 import java.util.Set;
@@ -24,15 +24,18 @@ import org.openqa.selenium.By;
 //import org.testng.annotations.*;
 import com.gargoylesoftware.htmlunit.Version;
 
+import test_autoblox.keywords;
+import test_autoblox.login;
 
 
 
-public class loginsuit extends keywords {
+
+public class Regression_Live extends keywords {
 	  public static WebDriver driver;
 	  private static String baseUrl;
 	  private boolean acceptNextAlert = true;
 	  private static StringBuffer verificationErrors = new StringBuffer();
-	  final static Logger logger = Logger.getLogger(loginsuit.class);
+	  final static Logger logger = Logger.getLogger(Regression_Live.class);
 	  
 	  
 
@@ -59,7 +62,7 @@ public class loginsuit extends keywords {
 
 	  public void login_test_suit() throws Throwable {
 		  
-		  login.navigateLogin();
+		  login.regression_live();
 		  logger.info("Enter in website");
 		  System.out.println("open website");
 		  
@@ -72,46 +75,7 @@ public class loginsuit extends keywords {
 		  System.out.println("Click on home button from menubar");
 		
 		  
-		  //**check current user rights & change current user password**
-		  test_autoblox.Mijn_gegevens.Gebruikergegevens.clickon_Gebruikergegevens();
-		  logger.info("open & check admin details");
-		  System.out.println("open & check admin details");
-		  
-		  refresh();
-		  //**open all company page**
-		 test_autoblox.Beheer.Bedrijfs_beheer.clickon_Bedrijfs_beheer();
-		 logger.info("Click on Beheer>>Bedrijfs_beheer from menubar");
-		 System.out.println("Display all data of Bedrijfs_beheer");
 		 
-		  //*create company*
-		   test_autoblox.Beheer.createnew.Nieuw_bedrijf.required_fields ();
-		 logger.info("Click on Beheer>>Bedrijfs_beheer from menubar and create new company");
-
-		  test_autoblox.Beheer.createnew.filter.filter_click ();
-		  logger.info("filter data and diaply all data");
-		  System.out.println("filter data and diaply all data");
-		
-		  //*create new user*
-		 
-		  test_autoblox.Beheer.createnew.user_create.new_user_admin();
-		  System.out.println("for create new user");
-		  test_autoblox.Beheer.createnew.user_create.edit_user();
-		  System.out.println("edit user");
-		  driver.switchTo().frame("ctl00_cphContent_ucUsers_ucUserFrame_mfFrame");
-		  test_autoblox.Beheer.createnew.user_create.required_fields();
-		  test_autoblox.Beheer.createnew.user_create.Allfields ();
-		  driver.switchTo().alert().accept();
-	      Thread.sleep(5000);
-		  clickElement("xpath" ,"//*[contains(@UID,'0e210d82-48b5-4436-af2a-ee5171bac9f5')]");
-		  clickElement("xpath" ,"//a[@id='ctl00_cphContent_ucUsers_gvList_ctl06_lbUserNameLink']");
-		  driver.switchTo().frame("ctl00_cphContent_ucUsers_ucUserFrame_mfFrame");		  
-		  System.out.println("click user id which you want to given admin rights");	 
-		  test_autoblox.Beheer.createnew.user_create.admin_assign();
-		  System.out.println("assign to admin rights");	
-		  Thread.sleep(5000);
-		  
-		  //*Create Car waiting...
-		  
 		  
 		  
 		  System.out.println("all done");	  

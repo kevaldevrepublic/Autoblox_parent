@@ -34,7 +34,7 @@ public class user_create extends keywords {
 		
 	}
 	
-public static void  edit_user () throws Exception
+	public static void  edit_user () throws Exception
 	 
 	
 	

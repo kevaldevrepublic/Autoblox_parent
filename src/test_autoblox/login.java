@@ -29,6 +29,23 @@ public class login extends keywords
         System.out.println("Open Link -> " + link);
     
 	  }
+	 
+	  public static void regression_acceptance()  throws Exception 
+	  {
+	    openURL("https://acceptlive.autoblox.eu/Login.aspx");
+        String link = currentURL();
+        System.out.println("Open Link -> " + link);
+    
+	  }
+	  
+	  public static void regression_live()  throws Exception 
+	  {
+	    openURL("https://fleetselect.autoblox.nl/Login.aspx");
+        String link = currentURL();
+        System.out.println("Open Link -> " + link);
+    
+	  }
+	  
 	  
 	  public static void navigateLoginacceptance()  throws Exception 
 	  {
@@ -53,15 +70,14 @@ public class login extends keywords
         	{
 		 
 		  excelpath();
-         	 String a=excel_datadriven.getCellData(6, 0);
-         	 
+         	 String a=excel_datadriven.getCellData(1, 0);
+         	 String b=excel_datadriven.getCellData(1, 1);
 		/*  for(int i=1; i<20; i++){
 			 java.lang.String a = excel_datadriven.getCellData1(i, 0);
 
 			 }*/
-       	     String b=excel_datadriven.getCellData(1, 1);
-       	     
-       	              	
+       	    
+        	
 	        clearElement("xpath",".//*[@id='ucLoginSimple_tbLoginName']");
 	        insertElement("xpath",".//*[@id='ucLoginSimple_tbLoginName']",a);
 	        clearElement("xpath",".//*[@id='ucLoginSimple_tbPassword']");
