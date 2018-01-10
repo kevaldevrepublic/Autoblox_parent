@@ -87,7 +87,7 @@ public class Regression_basic extends keywords {
         Thread.sleep(2000);
         clickElement("id", "ctl00_cphContent_ibSearch");
         System.out.println("click on search");
-        Thread.sleep(5000);
+        Thread.sleep(15000);
         
        
        
@@ -109,14 +109,21 @@ public class Regression_basic extends keywords {
 		        if (dateid.contains("Navigeer pagina")) 
 			        {
 			        
-			//			System.out.println("enter first if");
+						System.out.println("move to last page");
 						String laatste= getText ("id","ctl00_cphContent_gvList_ctl01_gvPager_lnkLast");
 						if(laatste.contains("Laatste >>")) 
 						{
 			//				System.out.println("enter second if");
 							log.info("Error on Last Page");
-							System.out.println("Error on Last Page");
+							System.out.println("click on Last Page");
+							Thread.sleep(4000);
 							clickElement("id","ctl00_cphContent_gvList_ctl01_gvPager_lnkLast");
+							System.out.println("wait");
+							Thread.sleep(5000);
+						}
+						else {
+							log.info("Error on First Page");
+							System.out.println("Error on First Page");
 						}
 			        } 
 		        else 

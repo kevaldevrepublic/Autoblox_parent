@@ -95,3 +95,58 @@
 2018-01-10 15:15:33,564 INFO  [Regression_Acceptance] Error on Last Page 
 2018-01-10 15:19:06,203 INFO  [Regression_Acceptance] Enter in website 
 2018-01-10 15:19:10,246 INFO  [Regression_Acceptance] login sucessfull 
+2018-01-10 15:21:09,655 INFO  [Regression_Acceptance] Click on home button from menubar 
+2018-01-10 15:23:25,959 INFO  [Regression_Acceptance] Enter in website 
+2018-01-10 15:23:30,033 INFO  [Regression_Acceptance] login sucessfull 
+2018-01-10 15:24:19,693 INFO  [Regression_Acceptance] Click on home button from menubar 
+2018-01-10 15:24:22,051 INFO  [Regression_Acceptance] open company list page 
+2018-01-10 15:24:24,081 INFO  [Regression_Acceptance] open:->open_Companylist  
+2018-01-10 15:24:25,984 INFO  [Regression_Acceptance] mycar page open 
+2018-01-10 15:24:28,000 INFO  [Regression_Acceptance] open:->mycar 
+2018-01-10 15:24:28,232 INFO  [Regression_Acceptance] payment page is open 
+2018-01-10 15:24:45,870 INFO  [Regression_Acceptance] select all radio button and select search button also click on pdf button as well as download invoice 
+2018-01-10 15:24:45,870 INFO  [Regression_Acceptance] open:->Betalingen_payment 
+2018-01-10 15:24:45,870 INFO  [Regression_Acceptance] open:-> Syatemlog 
+2018-01-10 15:24:46,432 INFO  [Regression_Acceptance] open system log 
+2018-01-10 15:25:14,299 INFO  [Regression_Acceptance] Error on Last Page 
+2018-01-10 15:30:57,732 INFO  [Regression_Acceptance] Enter in website 
+2018-01-10 15:31:01,394 INFO  [Regression_Acceptance] login sucessfull 
+2018-01-10 15:31:09,409 INFO  [Regression_Acceptance] open:-> Syatemlog 
+2018-01-10 15:31:31,043 INFO  [Regression_Acceptance] open system log 
+2018-01-10 15:31:58,583 INFO  [Regression_Acceptance] Error on Last Page 
+2018-01-10 17:00:51,955 INFO  [Regression_Acceptance] Enter in website 
+2018-01-10 17:00:55,910 INFO  [Regression_Acceptance] login sucessfull 
+2018-01-10 17:02:10,212 INFO  [Regression_Acceptance] Enter in website 
+2018-01-10 17:02:14,303 INFO  [Regression_Acceptance] login sucessfull 
+2018-01-10 17:03:51,652 INFO  [Regression_Acceptance] open:-> Syatemlog 
+2018-01-10 17:03:52,661 INFO  [Regression_Acceptance] open system log 
+2018-01-10 17:05:39,166 INFO  [Regression_Acceptance] Error on Last Page 
+2018-01-10 17:08:15,146 INFO  [Regression_Acceptance] Enter in website 
+2018-01-10 17:08:19,030 INFO  [Regression_Acceptance] login sucessfull 
+2018-01-10 17:08:27,048 INFO  [Regression_Acceptance] open:-> Syatemlog 
+2018-01-10 17:08:49,797 INFO  [Regression_Acceptance] open system log 
+2018-01-10 17:09:17,402 INFO  [Regression_Acceptance] Error on Last Page 
+2018-01-10 17:10:12,436 INFO  [Regression_Acceptance] Enter in website 
+2018-01-10 17:10:16,144 INFO  [Regression_Acceptance] login sucessfull 
+2018-01-10 17:10:24,157 INFO  [Regression_Acceptance] open:-> Syatemlog 
+2018-01-10 17:10:45,835 INFO  [Regression_Acceptance] open system log 
+2018-01-10 17:11:13,556 INFO  [Regression_Acceptance] Error on Last Page 
+2018-01-10 17:11:22,934 INFO  [Regression_Acceptance] logout successfully 
+2018-01-10 17:15:48,434 INFO  [Regression_Acceptance] Enter in website 
+2018-01-10 17:15:53,177 INFO  [Regression_Acceptance] login sucessfull 
+2018-01-10 17:16:01,178 INFO  [Regression_Acceptance] open:-> Syatemlog 
+2018-01-10 17:16:27,191 INFO  [Regression_Acceptance] open system log 
+2018-01-10 17:16:55,009 INFO  [Regression_Acceptance] Error on Last Page 
+2018-01-10 17:17:04,771 INFO  [Regression_Acceptance] logout successfully 
+2018-01-10 17:21:39,552 INFO  [Regression_Acceptance] Enter in website 
+2018-01-10 17:21:43,448 INFO  [Regression_Acceptance] login sucessfull 
+2018-01-10 17:21:51,449 INFO  [Regression_Acceptance] open:-> Syatemlog 
+2018-01-10 17:22:16,477 INFO  [Regression_Acceptance] open system log 
+2018-01-10 17:22:44,263 INFO  [Regression_Acceptance] Error on Last Page 
+2018-01-10 17:22:53,755 INFO  [Regression_Acceptance] logout successfully 
+2018-01-10 17:26:36,321 INFO  [Regression_Acceptance] Enter in website 
+2018-01-10 17:26:40,351 INFO  [Regression_Acceptance] login sucessfull 
+2018-01-10 17:26:48,353 INFO  [Regression_Acceptance] open:-> Syatemlog 
+2018-01-10 17:27:13,257 INFO  [Regression_Acceptance] open system log 
+2018-01-10 17:27:51,161 INFO  [Regression_Acceptance] No Error Data Found 
+2018-01-10 17:27:51,355 INFO  [Regression_Acceptance] logout successfully 
