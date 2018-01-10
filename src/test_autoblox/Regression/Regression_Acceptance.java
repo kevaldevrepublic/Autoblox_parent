@@ -68,14 +68,14 @@ public class Regression_Acceptance extends keywords {
 		  login.correctLogin();
 		  log.info("login sucessfull");
 		  System.out.println("login sucessfull");
-		  Thread.sleep(2000);
+		  Thread.sleep(8000);
 		  
-		  test_autoblox.home.Home.clickhome();
+		   test_autoblox.home.Home.clickhome();
 		  log.info("Click on home button from menubar");
 		  System.out.println("Click on home button from menubar");
 		  Thread.sleep(2000);
 		  
-		  /*Regression_basic.open_Companylist();
+		  Regression_basic.open_Companylist();
 		  log.info("open:->open_Companylist ");
 		  System.out.println("open:->open_Companylist ");
 		  Regression_basic.mycar();
@@ -83,11 +83,13 @@ public class Regression_Acceptance extends keywords {
 		  System.out.println("open:->mycar");
 		  Regression_basic.Betalingen_payment();
 		  log.info("open:->Betalingen_payment");
-		  System.out.println("open:->Betalingen_payment");*/
+		  System.out.println("open:->Betalingen_payment");
 		  
-		  Regression_basic.systemlog();
+		  
 		  log.info("open:-> Syatemlog");
 		  System.out.println("open:-> Systemlog");
+		  Regression_basic.systemlog();
+		  
 		  
 		  System.out.println("all done");	  
 		  
@@ -102,7 +104,7 @@ public class Regression_Acceptance extends keywords {
 	    
 		 Thread.sleep(15000);
 		
-		driver.quit();
+		//driver.quit();
 	    String verificationErrorString = verificationErrors.toString();
 	    if (!"".equals(verificationErrorString)) {
 	      fail(verificationErrorString);

@@ -4,6 +4,8 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 import org.apache.log4j.Logger;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 
 import test.GetCurrentDateTime;
 import test_autoblox.excel_datadriven;
@@ -53,12 +55,13 @@ public class Regression_basic extends keywords {
 	}
 	
 
-	public static void systemlog() throws Exception   {
+	public static void systemlog() throws Exception   
+	{
 
 		mouse_move("id","ctl00_mmFS_lnk", "linkText","System Log" );
 		log.info("open system log");
 		System.out.println("open system log");
-		Thread.sleep(2000);
+		Thread.sleep(15000);
 		
 		GetCurrentDateTime currDt = GetCurrentDateTime.getInstance();
 		System.out.println(currDt.getData());
@@ -85,7 +88,47 @@ public class Regression_basic extends keywords {
         clickElement("id", "ctl00_cphContent_ibSearch");
         System.out.println("click on search");
         Thread.sleep(5000);
-	}
+        
+       
+       
+        String dateid= getText ("xpath","/html[1]/body[1]/form[1]/div[4]/table[2]/tbody[1]/tr[2]/td[2]/div[1]/div[1]/div[1]/div[2]/table[1]/tbody[1]/tr[1]/td[1]");
+        System.out.println("Navigeer pagina: " + dateid);
+        
+		/*
+		String str = dateid;
+		String replaceString = str.replace("="," ");
+		String replaceString1 = replaceString.replace(","," ");
+		String delimiter = " ";
+
+		String[] temp;
+		temp = replaceString1.split(delimiter);
+		
+		String last= temp[10];
+		System.out.println(last);*/
+        
+		        if (dateid.contains("Navigeer pagina")) 
+			        {
+			        
+			//			System.out.println("enter first if");
+						String laatste= getText ("id","ctl00_cphContent_gvList_ctl01_gvPager_lnkLast");
+						if(laatste.contains("Laatste >>")) 
+						{
+			//				System.out.println("enter second if");
+							log.info("Error on Last Page");
+							System.out.println("Error on Last Page");
+							clickElement("id","ctl00_cphContent_gvList_ctl01_gvPager_lnkLast");
+						}
+			        } 
+		        else 
+			        {
+			//        	System.out.println("enter else");
+			        	log.info("No Error Data Found");
+						System.out.println("No Error Data Found");
+					}
+       
+
+        }
 	
-	
+
+
 }
