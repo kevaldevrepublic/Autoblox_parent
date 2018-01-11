@@ -70,11 +70,16 @@ public class Regression_Acceptance extends keywords {
 		  System.out.println("login sucessfull");
 		  Thread.sleep(8000);
 		  
-		 /*  test_autoblox.home.Home.clickhome();
+		  test_autoblox.home.Home.clickhome();
 		  log.info("Click on home button from menubar");
 		  System.out.println("Click on home button from menubar");
 		  Thread.sleep(2000);
+		  //create car
 		  
+		 Create_Car.searchcar1();
+		 Create_Car.searchcar2();
+		  
+		  /*
 		  Regression_basic.open_Companylist();
 		  log.info("open:->open_Companylist ");
 		  System.out.println("open:->open_Companylist ");
@@ -84,13 +89,13 @@ public class Regression_Acceptance extends keywords {
 		  Regression_basic.Betalingen_payment();
 		  log.info("open:->Betalingen_payment");
 		  System.out.println("open:->Betalingen_payment");
-		  */
+		  
 		  
 		  log.info("open:-> Syatemlog");
 		  System.out.println("open:-> Systemlog");
 		  Regression_basic.systemlog();
 		  
-		  
+		  */
 		  System.out.println("all done");	  
 		  
 		  login.logout();

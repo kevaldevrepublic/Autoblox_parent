@@ -279,7 +279,7 @@ public class keywords {
 				{
 
 					System.out.println("Switching to window - > " + handle);
-					System.out.println("Navigating to vsb details");
+					System.out.println("Navigating to vsb/Kenteken details");
 					driver.switchTo().window(handle); //Switch to the desired window first and then execute commands using driver
 					//System.out.println("switching handle");
 					//
@@ -290,21 +290,21 @@ public class keywords {
 					//clickElement("id", "ucCarDetails_tbsCarDetails_tbbBasicInfo_bTab");
 					Thread.sleep(5000);
 					
-					String VSBdetails = getText ("xpath","/html[1]/body[1]/form[1]/div[3]/div[1]");
+					String Kentekendetails = getText ("xpath","/html[1]/body[1]/form[1]/div[3]/div[1]");
 					//String VSBdetails1 = getText ("xpath","//*[@id:pnlTOP][][@class,'cModalHeader']");
-					System.out.println(VSBdetails);
+					System.out.println(Kentekendetails);
 					
 					//String VSBdetails2 = getText("xpath","//div[starts-with(text(),VSB)]");
 					//System.out.println(VSBdetails2);
 					
-					String str = VSBdetails;
+					String str = Kentekendetails;
 			        
 					   String[] tokens = str.split(" ");
 				
 				        String sub = tokens[1];
 				        String[] p = sub.split(",");
-				        String VSB = p[0];
-				        System.out.println(VSB);
+				        String Kenteken = p[0];
+				        System.out.println(Kenteken);
 				        Thread.sleep(3000);
 				        
 				        driver.close();

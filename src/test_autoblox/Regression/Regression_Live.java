@@ -1,32 +1,25 @@
 package test_autoblox.Regression;
 
-import java.util.Iterator;
-import java.util.Set;
-import java.util.regex.Pattern;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.concurrent.TimeUnit;
-import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import org.apache.commons.logging.Log;
+
+import test.GetCurrentDateTime;
+
 import org.apache.log4j.Logger;
-import org.junit.*;
 import static org.junit.Assert.*;
-import static org.hamcrest.CoreMatchers.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.Select;
-//import org.testng.annotations.AfterClass;
-//import org.testng.annotations.AfterTest;
-//import org.testng.annotations.BeforeClass;
-//import org.testng.annotations.BeforeTest;
-import org.openqa.selenium.By;
-//import org.testng.annotations.Test;
-//import org.testng.annotations.*;
-import com.gargoylesoftware.htmlunit.Version;
-
 import test_autoblox.keywords;
 import test_autoblox.login;
-
+import static org.junit.Assert.fail;
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Capabilities;
+import org.openqa.selenium.WebDriver;
 
 
 
@@ -35,14 +28,16 @@ public class Regression_Live extends keywords {
 	  private static String baseUrl;
 	  private boolean acceptNextAlert = true;
 	  private static StringBuffer verificationErrors = new StringBuffer();
-	  final static Logger logger = Logger.getLogger(Regression_Live.class);
+	  final static Logger log = Logger.getLogger(Regression_Live.class.getName());
 	  
 	  
 
 	  @BeforeClass
 	  public static void setUp() throws Exception {
 	    driver = new FirefoxDriver();
-	    driver.manage().window().maximize();
+		  /*System.setProperty("webdriver.chrome.driver", "D:\\Keval\\Data\\Selenium\\latest_chromedriver_win32\\chromedriver.exe");
+		   WebDriver driver=new ChromeDriver();*/
+		driver.manage().window().maximize();
 	    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	    Capabilities cap = ((RemoteWebDriver) driver).getCapabilities();
 	    
@@ -56,6 +51,9 @@ public class Regression_Live extends keywords {
 	    System.out.println(version);
 	    keywords.setFirefoxDriver(driver);
 
+	    GetCurrentDateTime CT=  GetCurrentDateTime.getInstance();
+	    System.out.println(CT.getData());
+	    
 	  } 
 
 	  @Test
@@ -63,25 +61,40 @@ public class Regression_Live extends keywords {
 	  public void login_test_suit() throws Throwable {
 		  
 		  login.regression_live();
-		  logger.info("Enter in website");
+		  log.info("Enter in website");
 		  System.out.println("open website");
+		  Thread.sleep(2000);
 		  
 		  login.correctLogin();
-		  logger.info("login sucessfull");
+		  log.info("login sucessfull");
 		  System.out.println("login sucessfull");
+		  Thread.sleep(8000);
 		  
 		  test_autoblox.home.Home.clickhome();
-		  logger.info("Click on home button from menubar");
+		  log.info("Click on home button from menubar");
 		  System.out.println("Click on home button from menubar");
-		
+		  Thread.sleep(2000);
 		  
-		 
+		  Regression_basic.open_Companylist();
+		  log.info("open:->open_Companylist ");
+		  System.out.println("open:->open_Companylist ");
+		  Regression_basic.mycar();
+		  log.info("open:->mycar");
+		  System.out.println("open:->mycar");
+		  Regression_basic.Betalingen_payment();
+		  log.info("open:->Betalingen_payment");
+		  System.out.println("open:->Betalingen_payment");
+		  
+		  
+		  log.info("open:-> Syatemlog");
+		  System.out.println("open:-> Systemlog");
+		  Regression_basic.systemlog();
 		  
 		  
 		  System.out.println("all done");	  
 		  
 		  login.logout();
-		  logger.info("logout successfully");
+		  log.info("logout successfully");
 		   
 	  }
 
