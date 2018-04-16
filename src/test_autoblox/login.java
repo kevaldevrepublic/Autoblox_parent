@@ -30,7 +30,7 @@ public class login extends keywords
     
 	  }
 	 
-	  public static void regression_acceptance()  throws Exception 
+	  public static void regression_acceptancelive()  throws Exception 
 	  {
 	    openURL("https://acceptlive.autoblox.eu/Login.aspx");
         String link = currentURL();
@@ -64,9 +64,29 @@ public class login extends keywords
         System.out.println("Open Link -> " + link);
         Thread.sleep(5000);
 	  }
-        
 	  
 	  public static void  correctLogin()  throws Exception 
+  	{
+	 
+	  excelpath();
+   	 String a=excel_datadriven.getCellData(1, 0);
+   	 String b=excel_datadriven.getCellData(1, 1);
+	/*  for(int i=1; i<20; i++){
+		 java.lang.String a = excel_datadriven.getCellData1(i, 0);
+
+		 }*/
+ 	    
+  	
+      clearElement("xpath",".//*[@id='ucLoginSimple_tbLoginName']");
+      insertElement("xpath",".//*[@id='ucLoginSimple_tbLoginName']",a);
+      clearElement("xpath",".//*[@id='ucLoginSimple_tbPassword']");
+      insertElement("xpath",".//*[@id='ucLoginSimple_tbPassword']",b);
+      clickElement("xpath", ".//*[@id='ucLoginSimple_btnLogin']");
+      Thread.sleep(4000);
+      System.out.println("Done login");
+  	} 
+	  
+	  public static void  live_correctLogin()  throws Exception 
         	{
 		 
 		  excelpath();
@@ -81,10 +101,32 @@ public class login extends keywords
 	        clearElement("xpath",".//*[@id='ucLoginSimple_tbLoginName']");
 	        insertElement("xpath",".//*[@id='ucLoginSimple_tbLoginName']",a);
 	        clearElement("xpath",".//*[@id='ucLoginSimple_tbPassword']");
-	        insertElement("xpath",".//*[@id='ucLoginSimple_tbPassword']",b);
+	        insertElement("xpath",".//*[@id='ucLoginSimple_tbPassword']","test@123");
 	        clickElement("xpath", ".//*[@id='ucLoginSimple_btnLogin']");
+	        Thread.sleep(4000);
 	        System.out.println("Done login");
         	}
+	  
+	  public static void  acceptlive_correctLogin()  throws Exception 
+  	{
+	 
+	  excelpath();
+   	 String a=excel_datadriven.getCellData(2, 0);
+   	 String b=excel_datadriven.getCellData(1, 1);
+	/*  for(int i=1; i<20; i++){
+		 java.lang.String a = excel_datadriven.getCellData1(i, 0);
+
+		 }*/
+ 	    
+  	
+      clearElement("xpath",".//*[@id='ucLoginSimple_tbLoginName']");
+      insertElement("xpath",".//*[@id='ucLoginSimple_tbLoginName']",a);
+      clearElement("xpath",".//*[@id='ucLoginSimple_tbPassword']");
+      insertElement("xpath",".//*[@id='ucLoginSimple_tbPassword']",b);
+      clickElement("xpath", ".//*[@id='ucLoginSimple_btnLogin']");
+      Thread.sleep(4000);
+      System.out.println("Done login");
+  	}
 	  
 	  public static void  correctLoginacceptance()  throws Exception 
   	{

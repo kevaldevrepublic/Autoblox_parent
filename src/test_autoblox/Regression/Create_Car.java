@@ -23,7 +23,7 @@ public class Create_Car extends keywords {
 	}
 	
 	public static void searchcar1() throws Exception {
-		for (int i = 0; i < 1; i++) 
+		for (int i = 0; i < 2; i++) 
 			
 			
         {
@@ -274,19 +274,71 @@ public class Create_Car extends keywords {
 		Thread.sleep(5000);
 		clickElement("id", "ctl00_ibGlobalSearch");
 		Thread.sleep(10000);
-		multiplewindowpopup();
+		multiplewindowpopup1();
 		}
+		public static  void test() throws Exception
+		{
+			
+			insertElement("id", "ctl00_tbGlobalSearch", "02XJH8");
+			Thread.sleep(5000);
+			clickElement("id", "ctl00_ibGlobalSearch");
+			//clickElement("id", "ctl00_btGlobalSearch");
+			System.out.println("click search:->  " + "02XJH8" );
+    		Thread.sleep(10000);
+    		multiplewindowpopup1();
+    		
+		}
+		
+		public static  String  multiplewindowpopup1() throws Exception
+		{
+
+			
+				{
+					//driver.get();
+					System.out.println("enter multiplewindowpoup1");
+					String parentWindowHandle = driver.getWindowHandle();
+					System.out.println("Parent window's handle -> " + parentWindowHandle);
+					
+
+					java.util.Set<String> allWindowHandles = driver.getWindowHandles();
+					String lastWindowHandle = "";
+
+
+					for(String handle : allWindowHandles)
+					{
+						System.out.println(handle);
+						if (handle.equals(parentWindowHandle)== false)					
+						{
+
+							
+							driver.switchTo().window(handle); //Switch to the desired window first and then execute commands using driver
+							//System.out.println("switching handle");
+
+						        driver.close();
+								System.out.println("window close");
+
+						}
+					}
+
+					
+					driver.switchTo().window(lastWindowHandle);
+				
+				}
+				return null;
+			
+		}
+		
 		
 		public static  java.lang.String  multiplewindowpopup() throws Exception
 		{
 			{
-				//driver.get();
+				System.out.println("enter multiplewindowpoup");
 				String parentWindowHandle = driver.getWindowHandle();
 				System.out.println("Parent window's handle -> " + parentWindowHandle);
 				
 
 				java.util.Set<String> allWindowHandles = driver.getWindowHandles();
-				String lastWindowHandle = "";
+				
 
 
 					for(String handle : allWindowHandles)
@@ -298,10 +350,26 @@ public class Create_Car extends keywords {
 									System.out.println("Switching to window - > " + handle);
 									System.out.println("Navigating to vsb/Kenteken details");
 									driver.switchTo().window(handle); //Switch to the desired window first and then execute commands using driver
-									//System.out.println("switching handle");
+									System.out.println("switching handle");
 								
 									Thread.sleep(10000);
-		
+									String Kentekendetails = getText ("xpath","/html[1]/body[1]/form[1]/div[3]/div[1]");
+								
+									System.out.println(Kentekendetails);
+								
+									
+									String str = Kentekendetails;
+							        
+									   String[] tokens = str.split(" ");
+								
+								        String sub = tokens[1];
+								        String[] p = sub.split(",");
+								        String Kenteken = p[0];
+								        System.out.println(Kenteken);
+								        Thread.sleep(3000);
+								        
+//									clickElement("id", "ucCarDetails_tbsCarDetails_tbbSaleHistory_bTab");
+//									System.out.println("Click on Verkoop ");
 									
 									
 									
@@ -311,7 +379,7 @@ public class Create_Car extends keywords {
 									
 								
 							        
-							        driver.close();
+							       // driver.close();
 									
 									driver.switchTo().window(parentWindowHandle);
 									System.out.println("window close, move to parent");

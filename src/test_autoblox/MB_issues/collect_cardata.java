@@ -9,24 +9,27 @@ import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 import com.thoughtworks.selenium.webdriven.commands.IsAlertPresent;
 
+import test_autoblox.excel_datadriven;
 import test_autoblox.keywords;
 import test_autoblox.login;
 
-public class MB_Master extends keywords {
+public class collect_cardata extends keywords {
 	
 	private static String baseUrl;
 	private boolean acceptNextAlert = true;
 	private static StringBuffer verificationErrors = new StringBuffer();
-	final static Logger logger = Logger.getLogger(MB_Master.class);
+	final static Logger logger = Logger.getLogger(collect_cardata.class);
 	
 	@BeforeClass
 	public static void setUp() throws Exception 
@@ -54,17 +57,17 @@ public class MB_Master extends keywords {
 
 	@Test
 
-	public void MBissues() throws Exception 
+	public void collect_cardata1() throws Exception 
 	{
 		//try
 		//{
 		
-			login.navigateMBLink();
+			login.regression_acceptancelive();
 			logger.info("Enter in website");
 			String loginurl = driver.getCurrentUrl();
 			System.out.println(loginurl + " <-:open website");
 
-			login.correctLogin();
+			login.acceptlive_correctLogin();
 			logger.info("login sucessfull");
 			System.out.println("login sucessfull");
 
@@ -75,69 +78,53 @@ public class MB_Master extends keywords {
 
 			System.out.println(loginid);
 
-			Thread.sleep(10000);
+			Thread.sleep(5000);
 			
-			for (int i = 0; i < 2; i++) 
-				
-				
-	        {
-	           /* for (int y = 0; y < 10; y++) 
-	            {
-	            	
-	            	for (int z = 0; z < 10; z++) 
-	            	{*/
-	            		
-	            		String search_insert = /*"ASD005";*/"ASDgm"+i/* + y + z*/;
-	            		clearElement("id", "ctl00_tbGlobalSearch");
-	            		insertElement("id", "ctl00_tbGlobalSearch", search_insert);
-	            		Thread.sleep(5000);
-	            		System.out.println("inserted values in search");
-	            		clickElement("id","ctl00_ibGlobalSearch");
-	            		System.out.println("click search:->  " + search_insert );
-	            		Thread.sleep(5000);
-	            		//boolean IsAlertPresent;
-	            		{ 
-	            		    try 
-	            		    { 
-	            		    	Alert confirmationAlert = driver.switchTo().alert();
-	    	            		String alertText = confirmationAlert.getText();
-	    	            		System.out.println("Alert text is " + alertText);
-	    	            		confirmationAlert.accept();
-	    	            		Thread.sleep(5000);
-	    	            		System.out.println("New create car with this vsb:->  " + search_insert );
-	    	            		MB_issues.navigate_newcar();
-		            			MB_issues.createcar(search_insert);
-		            			System.out.println("move to mb master");
-		            			System.out.println("\n\n\n**************************************\n\n\n");
-		            			
-		            			Thread.sleep(5000);
-		            			
-	            		         
-	            		    }  
-	            		    catch (NoAlertPresentException Ex) 
-	            		    { 
-	            		    	System.out.println("vsb is already there");
-		            			multiplewindow2();
-		            			System.out.println("\n\n\n**************************************\n\n\n");
-		            			Thread.sleep(5000);
-		            			
-	            		    }   
-	            		    
-	            		   
-	            		//} 
-						
-	              //	}
-	            	
-	            } 
+			clickElement("id","ctl00_mmNewCar_lnk");
+			Thread.sleep(5000);
+			
+			excelgetcardata();
+		   	String a=excel_datadriven.getCellData(0, 0);
+		   			
+			insertElement("id", "ctl00_cphContent_tbKenteken", a);
+			clickElement("id", "ctl00_cphContent_bNext");
+			Thread.sleep(5000);
+			System.out.println("click on next");
+			Thread.sleep(5000);
+			
+			java.lang.String checked = driver.findElement(By.xpath("//input[@id='ctl00_cphContent_rbYellowLicenseYes']")).getAttribute("checked");
 		
-	        }
+			System.out.println("checked value:- " + checked);
+			
+			/*if( checked.contains("checked"))
+			{
+				
+				System.out.println("Its Yellow");
+
+			}
+			else{
+			
+				
+				System.out.println("Its Grey");
+			
+			}*/
 			
 			
+			
+			
+			/*
+			String date= getText("id", "ctl00_cphContent_dsDateKenteken_tbDate");
+			System.out.println(date);
+			Thread.sleep(2000);
+			String BPM= getText("id", "ctl00_cphContent_tbBPM");
+			System.out.println(BPM);
+			Thread.sleep(2000);
+			*/
 			
 			 login.logout();
  			Thread.sleep(3000);
 			
-			
+ 			driver.quit();
 			
 		//}
 		
@@ -157,6 +144,8 @@ public class MB_Master extends keywords {
 	
 	
 	
+	
+
 	@AfterClass
 	
 	

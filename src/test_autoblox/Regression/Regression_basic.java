@@ -62,7 +62,7 @@ public class Regression_basic extends keywords {
 		log.info("open system log");
 		System.out.println("open system log");
 		Thread.sleep(15000);
-		
+
 		GetCurrentDateTime currDt = GetCurrentDateTime.getInstance();
 		System.out.println(currDt.getData());
 		System.out.println("firsttime display");
@@ -93,7 +93,7 @@ public class Regression_basic extends keywords {
        
         String dateid= getText ("xpath","/html[1]/body[1]/form[1]/div[4]/table[2]/tbody[1]/tr[2]/td[2]/div[1]/div[1]/div[1]/div[2]/table[1]/tbody[1]/tr[1]/td[1]");
         System.out.println("Navigeer pagina: " + dateid);
-        
+        Thread.sleep(5000);
 		/*
 		String str = dateid;
 		String replaceString = str.replace("="," ");
@@ -115,7 +115,7 @@ public class Regression_basic extends keywords {
 						{
 			//				System.out.println("enter second if");
 							log.info("Error on Last Page");
-							System.out.println("click on Last Page");
+							System.out.println("Error on Last Page");
 							Thread.sleep(4000);
 							clickElement("id","ctl00_cphContent_gvList_ctl01_gvPager_lnkLast");
 							System.out.println("wait");

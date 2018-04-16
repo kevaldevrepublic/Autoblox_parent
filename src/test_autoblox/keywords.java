@@ -124,6 +124,12 @@ public class keywords {
 		excel_datadriven.setExcelFile("D:\\Keval\\Data\\Selenium\\Scripts\\live\\Autoblox_parent\\src\\excel_datadriven\\datadrivenExcel1.xlsx", "Sheet1");
 
 	}
+	public static  void excelgetcardata()throws Exception
+	{
+		excel_datadriven.setExcelFile("D:\\\\Keval\\\\Data\\\\Projects\\\\Keval\\\\AutoBLOX\\\\Documents\\\\car_numbers_details.xlsx", "Sheet3");
+
+	}
+	
 	public static  void excelpath_createcar()throws Exception
 	{
 		excel_datadriven.setExcelFile("D:\\Keval\\Data\\Selenium\\Scripts\\live\\Autoblox_parent\\src\\excel_datadriven\\createcar_details.xlsx", "Sheet1");

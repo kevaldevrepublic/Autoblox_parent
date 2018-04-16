@@ -2,14 +2,15 @@ package test;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import test_autoblox.keywords;
 
-public class GetCurrentDateTime {
+public class GetCurrentDateTime extends keywords{
 	
 	private String data;
 	private static GetCurrentDateTime me = null;
 	
 	private GetCurrentDateTime() {
-		this.setData();
+		this.setCurrentData();
 	}
 	
 	public static GetCurrentDateTime getInstance() {
@@ -19,7 +20,11 @@ public class GetCurrentDateTime {
 		return me;
 	}
 	
-	public void setData() {
+	public void setData(String newData) {
+    	this.data = newData; 
+	}
+	
+	public void setCurrentData() {
     	DateTimeFormatter dtf = DateTimeFormatter.ofPattern("HH:mm:ss");  
     	LocalDateTime now = LocalDateTime.now();  
     	this.data = (dtf.format(now)); 

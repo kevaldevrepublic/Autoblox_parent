@@ -2,18 +2,20 @@ package test_autoblox.MB_issues;
 
 import org.openqa.selenium.WebDriver;
 
+
+
 import bsh.This;
 import test_autoblox.keywords;
 
 public class MB_issues extends keywords {
 
 	private static WebDriver driver;
-	private String baseUrl;
+	private static String baseUrl;
 	private boolean acceptNextAlert = true;
 	private StringBuffer verificationErrors = new StringBuffer();
 
 	public static void navigate_newcar() throws Exception {
-		openURL("https://mb.autoblox.eu/NewCar2.aspx");
+		openURL(  baseUrl +"/NewCar2.aspx");
 		String link = currentURL();
 		System.out.println("Open Link -> " + link);
 

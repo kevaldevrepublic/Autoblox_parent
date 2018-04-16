@@ -37,7 +37,8 @@ public class Regression_Acceptance extends keywords {
 	    driver = new FirefoxDriver();
 		  /*System.setProperty("webdriver.chrome.driver", "D:\\Keval\\Data\\Selenium\\latest_chromedriver_win32\\chromedriver.exe");
 		   WebDriver driver=new ChromeDriver();*/
-		driver.manage().window().maximize();
+	    driver.manage().deleteAllCookies();  
+	    driver.manage().window().maximize();
 	    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	    Capabilities cap = ((RemoteWebDriver) driver).getCapabilities();
 	    
@@ -51,8 +52,7 @@ public class Regression_Acceptance extends keywords {
 	    System.out.println(version);
 	    keywords.setFirefoxDriver(driver);
 
-	    GetCurrentDateTime CT=  GetCurrentDateTime.getInstance();
-	    System.out.println(CT.getData());
+	    
 	    
 	  } 
 
@@ -65,41 +65,56 @@ public class Regression_Acceptance extends keywords {
 		  System.out.println("open website");
 		  Thread.sleep(2000);
 		  
-		  login.correctLogin();
+		  login.acceptlive_correctLogin();
 		  log.info("login sucessfull");
 		  System.out.println("login sucessfull");
 		  Thread.sleep(8000);
-		  
-		  test_autoblox.home.Home.clickhome();
-		  log.info("Click on home button from menubar");
-		  System.out.println("Click on home button from menubar");
-		  Thread.sleep(2000);
-		  //create car
-		  
-		 Create_Car.searchcar1();
-		 Create_Car.searchcar2();
-		  
-		  /*
-		  Regression_basic.open_Companylist();
-		  log.info("open:->open_Companylist ");
-		  System.out.println("open:->open_Companylist ");
-		  Regression_basic.mycar();
-		  log.info("open:->mycar");
-		  System.out.println("open:->mycar");
-		  Regression_basic.Betalingen_payment();
-		  log.info("open:->Betalingen_payment");
-		  System.out.println("open:->Betalingen_payment");
+		 
+		  openURL("https://acceptlive.autoblox.eu/OnSale.aspx");
+		  String NL_time= getText("id","ctl00_lblServerTimeD");
+		  GetCurrentDateTime CT=  GetCurrentDateTime.getInstance();
+		  System.out.println("Collected nl time" + NL_time);
+		  CT.setData(NL_time);
+		  System.out.println(CT.getData());
 		  
 		  
-		  log.info("open:-> Syatemlog");
-		  System.out.println("open:-> Systemlog");
-		  Regression_basic.systemlog();
+//		  test_autoblox.home.Home.clickhome();
+//		  log.info("Click on home button from menubar");
+//		  System.out.println("Click on home button from menubar");
+//		  Thread.sleep(2000);
+//		  
+//		  
+//		  
+//		  Regression_basic.open_Companylist();
+//		  log.info("open:->open_Companylist ");
+//		  System.out.println("open:->open_Companylist ");
+//		  Regression_basic.mycar();
+//		  log.info("open:->mycar");
+//		  System.out.println("open:->mycar");
+//		  Regression_basic.Betalingen_payment();
+//		  log.info("open:->Betalingen_payment");
+//		  System.out.println("open:->Betalingen_payment");
+//		  
+//		  
+//		  log.info("open:-> Syatemlog");
+//		  System.out.println("open:-> Systemlog");
+//		  Regression_basic.systemlog();
 		  
-		  */
+		  
+		  	//create car
+		  
+//			 Create_Car.searchcar1();
+//			 Thread.sleep(10000);
+//			 Create_Car.searchcar2();
+//			 Thread.sleep(10000);
+			  Create_Car.test();
+		  
+		  
+		 
 		  System.out.println("all done");	  
-		  
-		  login.logout();
-		  log.info("logout successfully");
+//		  
+//		  login.logout();
+//		  log.info("logout successfully");
 		   
 	  }
 
@@ -109,7 +124,7 @@ public class Regression_Acceptance extends keywords {
 	    
 		 Thread.sleep(15000);
 		
-		driver.quit();
+//		driver.quit();
 	    String verificationErrorString = verificationErrors.toString();
 	    if (!"".equals(verificationErrorString)) {
 	      fail(verificationErrorString);

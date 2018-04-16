@@ -150,3 +150,184 @@
 2018-01-10 17:27:13,257 INFO  [Regression_Acceptance] open system log 
 2018-01-10 17:27:51,161 INFO  [Regression_Acceptance] No Error Data Found 
 2018-01-10 17:27:51,355 INFO  [Regression_Acceptance] logout successfully 
+2018-01-12 15:28:34,262 INFO  [Regression_Acceptance] Enter in website 
+2018-01-12 15:28:38,665 INFO  [Regression_Acceptance] login sucessfull 
+2018-01-12 15:32:38,791 INFO  [Regression_Acceptance] Enter in website 
+2018-01-12 15:32:42,819 INFO  [Regression_Acceptance] login sucessfull 
+2018-01-12 15:54:38,254 INFO  [Regression_Acceptance] Enter in website 
+2018-01-12 15:54:42,064 INFO  [Regression_Acceptance] login sucessfull 
+2018-01-12 15:56:34,897 INFO  [Regression_Acceptance] Enter in website 
+2018-01-12 15:56:38,603 INFO  [Regression_Acceptance] login sucessfull 
+2018-01-12 15:57:25,395 INFO  [Regression_Acceptance] Click on home button from menubar 
+2018-01-12 15:57:27,777 INFO  [Regression_Acceptance] open company list page 
+2018-01-12 15:57:29,777 INFO  [Regression_Acceptance] open:->open_Companylist  
+2018-01-12 15:57:31,299 INFO  [Regression_Acceptance] mycar page open 
+2018-01-12 15:57:33,299 INFO  [Regression_Acceptance] open:->mycar 
+2018-01-12 15:57:33,477 INFO  [Regression_Acceptance] payment page is open 
+2018-01-12 15:57:51,701 INFO  [Regression_Acceptance] select all radio button and select search button also click on pdf button as well as download invoice 
+2018-01-12 15:57:51,701 INFO  [Regression_Acceptance] open:->Betalingen_payment 
+2018-01-12 15:57:51,701 INFO  [Regression_Acceptance] open:-> Syatemlog 
+2018-01-12 15:57:52,545 INFO  [Regression_Acceptance] open system log 
+2018-01-12 15:58:30,288 INFO  [Regression_Acceptance] No Error Data Found 
+2018-01-12 15:59:55,099 INFO  [Regression_Acceptance] Enter in website 
+2018-01-12 15:59:58,854 INFO  [Regression_Acceptance] login sucessfull 
+2018-01-12 16:01:53,022 INFO  [Regression_Acceptance] Enter in website 
+2018-01-12 16:01:56,757 INFO  [Regression_Acceptance] login sucessfull 
+2018-01-12 16:09:03,442 INFO  [Regression_Acceptance] Enter in website 
+2018-01-12 16:09:07,025 INFO  [Regression_Acceptance] login sucessfull 
+2018-01-12 16:13:48,431 INFO  [Regression_Acceptance] Enter in website 
+2018-01-12 16:13:52,129 INFO  [Regression_Acceptance] login sucessfull 
+2018-01-12 16:15:31,264 INFO  [Regression_Acceptance] Enter in website 
+2018-01-12 16:15:39,107 INFO  [Regression_Acceptance] login sucessfull 
+2018-01-12 16:16:47,602 INFO  [Regression_Acceptance] Enter in website 
+2018-01-12 16:20:38,529 INFO  [Regression_Acceptance] Enter in website 
+2018-01-12 16:21:03,834 INFO  [Regression_Acceptance] login sucessfull 
+2018-01-12 16:21:32,056 INFO  [Regression_Acceptance] Click on home button from menubar 
+2018-01-12 16:21:34,425 INFO  [Regression_Acceptance] open company list page 
+2018-01-12 16:21:36,443 INFO  [Regression_Acceptance] open:->open_Companylist  
+2018-01-12 16:21:37,529 INFO  [Regression_Acceptance] mycar page open 
+2018-01-12 16:21:39,547 INFO  [Regression_Acceptance] open:->mycar 
+2018-01-12 16:21:39,731 INFO  [Regression_Acceptance] payment page is open 
+2018-01-12 16:21:57,407 INFO  [Regression_Acceptance] select all radio button and select search button also click on pdf button as well as download invoice 
+2018-01-12 16:21:57,407 INFO  [Regression_Acceptance] open:->Betalingen_payment 
+2018-01-12 16:21:57,407 INFO  [Regression_Acceptance] open:-> Syatemlog 
+2018-01-12 16:21:58,139 INFO  [Regression_Acceptance] open system log 
+2018-01-12 16:22:35,918 INFO  [Regression_Acceptance] Error on Last Page 
+2018-01-12 16:26:08,834 INFO  [MB_Master] Enter in website 
+2018-01-12 16:26:14,591 INFO  [MB_Master] login sucessfull 
+2018-01-12 16:30:15,747 INFO  [MB_Master] Enter in website 
+2018-01-12 16:30:21,515 INFO  [MB_Master] login sucessfull 
+2018-01-12 16:39:06,468 INFO  [Regression_Acceptance] Enter in website 
+2018-01-12 16:39:14,149 INFO  [Regression_Acceptance] login sucessfull 
+2018-01-12 16:39:41,820 INFO  [Regression_Acceptance] Click on home button from menubar 
+2018-01-12 16:39:44,171 INFO  [Regression_Acceptance] open company list page 
+2018-01-12 16:39:46,186 INFO  [Regression_Acceptance] open:->open_Companylist  
+2018-01-12 16:39:48,390 INFO  [Regression_Acceptance] mycar page open 
+2018-01-12 16:39:50,396 INFO  [Regression_Acceptance] open:->mycar 
+2018-01-12 16:39:50,596 INFO  [Regression_Acceptance] payment page is open 
+2018-01-12 16:40:08,085 INFO  [Regression_Acceptance] select all radio button and select search button also click on pdf button as well as download invoice 
+2018-01-12 16:40:08,085 INFO  [Regression_Acceptance] open:->Betalingen_payment 
+2018-01-12 16:40:08,085 INFO  [Regression_Acceptance] open:-> Syatemlog 
+2018-01-12 16:40:08,601 INFO  [Regression_Acceptance] open system log 
+2018-01-12 16:40:46,306 INFO  [Regression_Acceptance] Error on Last Page 
+2018-01-12 16:46:35,465 INFO  [Regression_Acceptance] Enter in website 
+2018-01-12 16:46:43,198 INFO  [Regression_Acceptance] login sucessfull 
+2018-01-12 16:47:12,303 INFO  [Regression_Acceptance] Click on home button from menubar 
+2018-01-12 16:47:14,650 INFO  [Regression_Acceptance] open company list page 
+2018-01-12 16:47:16,652 INFO  [Regression_Acceptance] open:->open_Companylist  
+2018-01-12 16:47:18,251 INFO  [Regression_Acceptance] mycar page open 
+2018-01-12 16:47:20,259 INFO  [Regression_Acceptance] open:->mycar 
+2018-01-12 16:47:20,460 INFO  [Regression_Acceptance] payment page is open 
+2018-01-12 16:47:38,144 INFO  [Regression_Acceptance] select all radio button and select search button also click on pdf button as well as download invoice 
+2018-01-12 16:47:38,144 INFO  [Regression_Acceptance] open:->Betalingen_payment 
+2018-01-12 16:47:38,144 INFO  [Regression_Acceptance] open:-> Syatemlog 
+2018-01-12 16:47:38,877 INFO  [Regression_Acceptance] open system log 
+2018-01-12 16:48:16,626 INFO  [Regression_Acceptance] Error on Last Page 
+2018-01-16 12:13:45,067 INFO  [Regression_Acceptance] Enter in website 
+2018-01-16 12:13:54,048 INFO  [Regression_Acceptance] login sucessfull 
+2018-01-16 12:14:24,593 INFO  [Regression_Acceptance] Click on home button from menubar 
+2018-01-16 12:14:27,149 INFO  [Regression_Acceptance] open company list page 
+2018-01-16 12:14:29,152 INFO  [Regression_Acceptance] open:->open_Companylist  
+2018-01-16 12:14:31,625 INFO  [Regression_Acceptance] mycar page open 
+2018-01-16 12:14:33,628 INFO  [Regression_Acceptance] open:->mycar 
+2018-01-16 12:14:33,834 INFO  [Regression_Acceptance] payment page is open 
+2018-01-16 12:14:50,468 INFO  [Regression_Acceptance] select all radio button and select search button also click on pdf button as well as download invoice 
+2018-01-16 12:14:50,469 INFO  [Regression_Acceptance] open:->Betalingen_payment 
+2018-01-16 12:14:50,469 INFO  [Regression_Acceptance] open:-> Syatemlog 
+2018-01-16 12:14:51,132 INFO  [Regression_Acceptance] open system log 
+2018-01-16 12:16:53,680 INFO  [Regression_Acceptance] Enter in website 
+2018-01-16 12:17:01,677 INFO  [Regression_Acceptance] login sucessfull 
+2018-01-16 12:21:40,075 INFO  [Regression_Acceptance] Enter in website 
+2018-01-16 12:21:47,824 INFO  [Regression_Acceptance] login sucessfull 
+2018-01-16 12:27:49,357 INFO  [Regression_Acceptance] Enter in website 
+2018-01-16 12:27:57,436 INFO  [Regression_Acceptance] login sucessfull 
+2018-01-16 12:31:47,292 INFO  [Regression_Acceptance] Enter in website 
+2018-01-16 12:31:54,898 INFO  [Regression_Acceptance] login sucessfull 
+2018-01-16 12:33:17,479 INFO  [Regression_Acceptance] Enter in website 
+2018-01-16 12:33:25,373 INFO  [Regression_Acceptance] login sucessfull 
+2018-01-16 12:34:39,971 INFO  [Regression_Acceptance] Enter in website 
+2018-01-16 12:34:47,629 INFO  [Regression_Acceptance] login sucessfull 
+2018-01-16 12:43:45,767 INFO  [Regression_Acceptance] Enter in website 
+2018-01-16 12:43:53,333 INFO  [Regression_Acceptance] login sucessfull 
+2018-01-16 12:45:59,178 INFO  [Regression_Acceptance] Enter in website 
+2018-01-16 12:46:45,701 INFO  [Regression_Acceptance] login sucessfull 
+2018-01-16 12:53:49,166 INFO  [Regression_Acceptance] Enter in website 
+2018-01-16 12:53:58,009 INFO  [Regression_Acceptance] login sucessfull 
+2018-01-16 12:56:39,598 INFO  [Regression_Acceptance] Enter in website 
+2018-01-16 12:56:47,377 INFO  [Regression_Acceptance] login sucessfull 
+2018-01-16 12:59:13,181 INFO  [Regression_Acceptance] Enter in website 
+2018-01-16 12:59:33,288 INFO  [Regression_Acceptance] login sucessfull 
+2018-01-16 13:03:21,999 INFO  [Regression_Live] Enter in website 
+2018-01-16 13:03:29,600 INFO  [Regression_Live] login sucessfull 
+2018-01-16 13:06:27,381 INFO  [Regression_Live] Enter in website 
+2018-01-16 13:06:35,244 INFO  [Regression_Live] login sucessfull 
+2018-01-16 13:07:30,674 INFO  [Regression_Live] Click on home button from menubar 
+2018-01-16 13:07:33,128 INFO  [Regression_Acceptance] open company list page 
+2018-01-16 13:07:35,132 INFO  [Regression_Live] open:->open_Companylist  
+2018-01-16 13:07:37,055 INFO  [Regression_Acceptance] mycar page open 
+2018-01-16 13:07:39,057 INFO  [Regression_Live] open:->mycar 
+2018-01-16 13:07:39,252 INFO  [Regression_Acceptance] payment page is open 
+2018-01-16 13:07:55,578 INFO  [Regression_Acceptance] select all radio button and select search button also click on pdf button as well as download invoice 
+2018-01-16 13:07:55,578 INFO  [Regression_Live] open:->Betalingen_payment 
+2018-01-16 13:07:55,578 INFO  [Regression_Live] open:-> Syatemlog 
+2018-01-16 13:07:56,358 INFO  [Regression_Acceptance] open system log 
+2018-01-16 13:08:34,163 INFO  [Regression_Acceptance] Error on Last Page 
+2018-01-16 13:08:43,528 INFO  [Regression_Live] logout successfully 
+2018-01-16 13:13:31,680 INFO  [Regression_Live] Enter in website 
+2018-01-16 13:13:39,220 INFO  [Regression_Live] login sucessfull 
+2018-01-16 13:14:29,667 INFO  [Regression_Live] Click on home button from menubar 
+2018-01-16 13:14:32,129 INFO  [Regression_Acceptance] open company list page 
+2018-01-16 13:14:34,133 INFO  [Regression_Live] open:->open_Companylist  
+2018-01-16 13:14:36,976 INFO  [Regression_Acceptance] mycar page open 
+2018-01-16 13:14:38,977 INFO  [Regression_Live] open:->mycar 
+2018-01-16 13:14:39,162 INFO  [Regression_Acceptance] payment page is open 
+2018-01-16 13:14:57,782 INFO  [Regression_Acceptance] select all radio button and select search button also click on pdf button as well as download invoice 
+2018-01-16 13:14:57,782 INFO  [Regression_Live] open:->Betalingen_payment 
+2018-01-16 13:14:57,782 INFO  [Regression_Live] open:-> Syatemlog 
+2018-01-16 13:14:58,542 INFO  [Regression_Acceptance] open system log 
+2018-01-17 15:12:54,190 INFO  [Regression_Acceptance] Enter in website 
+2018-01-17 15:13:02,360 INFO  [Regression_Acceptance] login sucessfull 
+2018-01-17 15:23:03,904 INFO  [Regression_Acceptance] Enter in website 
+2018-01-17 15:23:11,945 INFO  [Regression_Acceptance] login sucessfull 
+2018-01-17 15:23:26,790 INFO  [Regression_Acceptance] open:-> Syatemlog 
+2018-01-17 15:23:27,402 INFO  [Regression_Acceptance] open system log 
+2018-01-17 15:25:41,257 INFO  [Regression_Acceptance] Enter in website 
+2018-01-17 15:25:48,838 INFO  [Regression_Acceptance] login sucessfull 
+2018-01-17 15:26:02,885 INFO  [Regression_Acceptance] open:-> Syatemlog 
+2018-01-17 15:26:03,501 INFO  [Regression_Acceptance] open system log 
+2018-01-17 15:26:41,162 INFO  [Regression_Acceptance] Error on Last Page 
+2018-01-17 15:40:27,834 INFO  [Regression_Acceptance] Enter in website 
+2018-01-17 15:40:35,460 INFO  [Regression_Acceptance] login sucessfull 
+2018-01-17 15:40:51,008 INFO  [Regression_Acceptance] open:-> Syatemlog 
+2018-01-17 15:40:51,586 INFO  [Regression_Acceptance] open system log 
+2018-01-17 15:41:34,162 INFO  [Regression_Acceptance] No Error Data Found 
+2018-01-18 11:06:06,709 INFO  [Regression_Acceptance] Enter in website 
+2018-01-18 11:06:14,730 INFO  [Regression_Acceptance] login sucessfull 
+2018-01-18 11:06:28,889 INFO  [Regression_Acceptance] open:-> Syatemlog 
+2018-01-18 11:06:29,534 INFO  [Regression_Acceptance] open system log 
+2018-01-18 11:08:13,276 INFO  [Regression_Acceptance] Enter in website 
+2018-01-18 11:08:21,198 INFO  [Regression_Acceptance] login sucessfull 
+2018-04-12 16:31:53,502 INFO  [collect_cardata] Enter in website 
+2018-04-12 16:31:59,708 INFO  [collect_cardata] login sucessfull 
+2018-04-12 16:36:51,019 INFO  [collect_cardata] Enter in website 
+2018-04-12 16:36:56,791 INFO  [collect_cardata] login sucessfull 
+2018-04-12 17:34:10,015 INFO  [collect_cardata] Enter in website 
+2018-04-12 17:34:15,756 INFO  [collect_cardata] login sucessfull 
+2018-04-12 17:39:00,166 INFO  [collect_cardata] Enter in website 
+2018-04-12 17:39:06,074 INFO  [collect_cardata] login sucessfull 
+2018-04-12 17:44:44,550 INFO  [collect_cardata] Enter in website 
+2018-04-12 17:44:50,297 INFO  [collect_cardata] login sucessfull 
+2018-04-12 17:54:47,918 INFO  [collect_cardata] Enter in website 
+2018-04-12 17:54:53,856 INFO  [collect_cardata] login sucessfull 
+2018-04-12 17:56:18,354 INFO  [collect_cardata] Enter in website 
+2018-04-12 17:56:24,120 INFO  [collect_cardata] login sucessfull 
+2018-04-12 17:58:13,666 INFO  [collect_cardata] Enter in website 
+2018-04-12 17:58:19,368 INFO  [collect_cardata] login sucessfull 
+2018-04-12 18:36:36,979 INFO  [collect_cardata] Enter in website 
+2018-04-12 18:36:42,877 INFO  [collect_cardata] login sucessfull 
+2018-04-12 18:38:32,766 INFO  [collect_cardata] Enter in website 
+2018-04-12 18:38:38,462 INFO  [collect_cardata] login sucessfull 
+2018-04-12 18:40:34,053 INFO  [collect_cardata] Enter in website 
+2018-04-12 18:40:40,039 INFO  [collect_cardata] login sucessfull 
+2018-04-12 18:42:49,470 INFO  [collect_cardata] Enter in website 
+2018-04-12 18:42:55,468 INFO  [collect_cardata] login sucessfull 

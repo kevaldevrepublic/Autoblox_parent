@@ -50,9 +50,6 @@ public class Regression_Live extends keywords {
 	    String version = cap.getVersion().toString();
 	    System.out.println(version);
 	    keywords.setFirefoxDriver(driver);
-
-	    GetCurrentDateTime CT=  GetCurrentDateTime.getInstance();
-	    System.out.println(CT.getData());
 	    
 	  } 
 
@@ -65,10 +62,17 @@ public class Regression_Live extends keywords {
 		  System.out.println("open website");
 		  Thread.sleep(2000);
 		  
-		  login.correctLogin();
+		  login.live_correctLogin();
 		  log.info("login sucessfull");
 		  System.out.println("login sucessfull");
 		  Thread.sleep(8000);
+		  
+		  openURL("https://fleetselect.autoblox.nl/OnSale.aspx");
+		  String NL_time= getText("id","ctl00_lblServerTimeD");
+		  GetCurrentDateTime CT=  GetCurrentDateTime.getInstance();
+		  System.out.println("Collected nl time" + NL_time);
+		  CT.setData(NL_time);
+		  System.out.println(CT.getData());
 		  
 		  test_autoblox.home.Home.clickhome();
 		  log.info("Click on home button from menubar");
